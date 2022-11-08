@@ -1,6 +1,6 @@
 name: chance_dart
-description: A starting point for Dart libraries or applications.
-version: 1.0.0
+description: Random generator helper for Dart
+version: 0.0.1-beta
 # homepage: https://www.example.com
 
 environment:
