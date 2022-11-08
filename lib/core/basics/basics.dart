@@ -1,4 +1,4 @@
-export 'src/bool.dart';
+export 'src/boolean.dart';
 export 'src/character.dart';
 export 'src/falsy.dart';
 export 'src/floating.dart';
