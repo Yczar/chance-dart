@@ -1,6 +1,6 @@
 # Chance Dart
 
-[![Chance Logo](http://chancejs.com/logo.png)](http://chancejs.com)
+<img width="1080" alt="Screenshot 2022-11-08 at 02 38 49" src="https://user-images.githubusercontent.com/32166619/200453125-78c910e9-1400-4641-8720-6efe36b06b40.png">
 
 [![awesomeness](https://img.shields.io/badge/awesomeness-maximum-red.svg)](https://github.com/yczar/chance-dart)
 
