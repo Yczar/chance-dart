@@ -4,11 +4,11 @@
 
 [![awesomeness](https://img.shields.io/badge/awesomeness-maximum-red.svg)](https://github.com/yczar/chance-dart)
 
-Chance - Random generator helper for JavaScript
+Chance - Random generator helper for Dart
 
 Homepage: [http://chancedart.com](http://chancedart.com)
 
-Many more details on [http://chancedart.com](http://chancejs.com) but this single
+Many more details on [http://chance-dart.com](http://chance-dart.com) but this single
 library can generate random numbers, characters, strings, names, addresses,
 dice, and pretty much anything else.
 
@@ -39,8 +39,6 @@ _Know a library that uses Chance that isn't here? Update the README and submit a
 ### Babalola Ayotomide(Czar)
 
 [https://www.github.com/Yczar](https://www.github.com/Yczar)
-
-#
 
 [@czarify](https://twitter.com/czarify)
 
