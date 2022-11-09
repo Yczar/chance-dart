@@ -52,4 +52,4 @@ Be a part of this project! You can run the test using the following.
 
 This project is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License) so feel free to hack away :)
 
-Proudly written in Washington, D.C.
+Proudly written in Nigeria.
