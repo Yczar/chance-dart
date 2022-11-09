@@ -1,7 +1,7 @@
 name: chance_dart
 description: Random generator helper for Dart
 version: 0.0.1-beta
-# homepage: https://www.example.com
+homepage: https://github.com/Yczar/chance-dart
 
 environment:
   sdk: '>=2.18.4 <3.0.0'
