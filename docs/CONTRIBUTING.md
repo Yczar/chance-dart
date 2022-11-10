@@ -1,63 +1,35 @@
-# Contributing to Transcriptase
+Want to contribute? Great! First, read this page
 
-We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
+### Filing issues
 
-- Reporting a bug
-- Discussing the current state of the code
-- Submitting a fix
-- Proposing new features
-- Becoming a maintainer
+In your issue, make sure to include the following items:
 
-## We Develop with Github
+- Add a descriptive title, e.g. include package name, search term or the specific error label from the analysis tab.
+- URL of the page you are reporting something (using the "Report an issue" link on the page does this).
+- Screenshot of the page (if relevant).
+- The device you are using (if relevant).
 
-We use github to host code, to track issues and feature requests, as well as accept pull requests.
+### Before you contribute code
 
-## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
+Before you start working on a larger contribution, you should get in touch with
+us first through the issue tracker with your idea so that we can help out and
+possibly guide you. Coordinating up front makes it much easier to avoid
+frustration later on.
 
-Pull requests are the best way to propose changes to the codebase (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
+### Code reviews
 
-1. Fork the repo and create your branch from `master`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
-6. Issue that pull request!
+All submissions, including submissions by project members, require review. We
+recommend [forking the repository][fork], making changes in your fork, and
+[sending us a pull request][pr] so we can review the changes and merge them into
+this repository. Note that this package doesn't use the Dart formatter. The
+reviewer will reformat your code themselves if necessary.
 
-## Any contributions you make will be under the MIT Software License
+[fork]: https://help.github.com/articles/about-forks/
+[pr]: https://help.github.com/articles/creating-a-pull-request/
 
-In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
+Functional changes will require tests to be added or changed. The tests live in
+the `test/` directory, and are run with `pub run test`. If you need to create
+new tests, use the existing tests as a guideline for what they should look like.
 
-## Report bugs using Github's [issues](https://github.com/briandk/transcriptase-atom/issues)
-
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](); it's that easy!
-
-## Write bug reports with detail, background, and sample code
-
-[This is an example](http://stackoverflow.com/q/12488905/180626) of a bug report I wrote, and I think it's not a bad model. Here's [another example from Craig Hockenberry](http://www.openradar.me/11905408), an app developer whom I greatly respect.
-
-**Great Bug Reports** tend to have:
-
-- A quick summary and/or background
-- Steps to reproduce
-  - Be specific!
-  - Give sample code if you can. [My stackoverflow question](http://stackoverflow.com/q/12488905/180626) includes sample code that _anyone_ with a base R setup can run to reproduce what I was seeing
-- What you expected would happen
-- What actually happens
-- Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
-
-People _love_ thorough bug reports. I'm not even kidding.
-
-## Use a Consistent Coding Style
-
-I'm again borrowing these from [Facebook's Guidelines](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
-
-- 2 spaces for indentation rather than tabs
-- You can try running `npm run lint` for style unification
-
-## License
-
-By contributing, you agree that your contributions will be licensed under its MIT License.
-
-## References
-
-This document was adapted from the open-source contribution guidelines for [Facebook's Draft](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
+Before you send your pull request, make sure all the tests pass! Just run
+`pub run test`.
