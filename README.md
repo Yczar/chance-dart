@@ -42,7 +42,9 @@ Please feel free to reach out to me if you have any questions or suggestions.
 
 THANK YOU!
 
-### Contribute!
+## How to Contribute
+
+To start making contributions please refer to [`CONTRIBUTING.md`](./docs/CONTRIBUTING.md).
 
 Be a part of this project! You can run the test using the following.
 
