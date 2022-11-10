@@ -4,7 +4,7 @@ version: 0.0.1-beta
 homepage: https://github.com/Yczar/chance-dart
 
 environment:
-  sdk: '>=2.18.4 <3.0.0'
+  sdk: ">=2.18.2 <3.0.0"
 
 # dependencies:
 #   path: ^1.8.0
@@ -12,6 +12,7 @@ environment:
 dev_dependencies:
   lints: ^2.0.0
   test: ^1.16.0
+
 dependencies:
   dart_geohash: ^2.0.2
   equatable: ^2.0.5
