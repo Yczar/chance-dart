@@ -4,7 +4,7 @@ version: 0.0.1-beta
 homepage: https://github.com/Yczar/chance-dart
 
 environment:
-  sdk: ">=2.18.2 <3.0.0"
+  sdk: ">=2.16.0 <3.0.0"
 
 # dependencies:
 #   path: ^1.8.0
