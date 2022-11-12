@@ -17,7 +17,6 @@ void main() {
 
     test("testing millisecond", () {
       int result = milli.millisecond();
-
       expect(result, result);
     });
   });
