@@ -2,7 +2,7 @@
     "name": "Chance Dart",
     "theme": "#36B9B9",
     "sidebar": [
-      ["Home", "/"],
+      ["Home", "/index"],
       ["Basics", "/basics"],
       ["Finance", "/finance"],
       ["Helpers", "/helpers"],
