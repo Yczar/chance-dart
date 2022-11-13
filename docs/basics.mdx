@@ -128,3 +128,141 @@ Or combine them.
 chance.floating({ min: 0, max: 100, fixed: 8 });
 => 45.92367599
 ```
+
+## integer
+
+```
+chance.integer()
+chance.integer({ max: 20 })
+```
+
+Return a random integer from 0.
+
+```
+chance.integer();
+=> 1293235
+```
+
+This max is inclusive, so it is included in the range. This means
+
+```
+chance.integer({ max: 2 })
+```
+
+would return either 0, 1, or 2.
+
+## letter
+
+Return a random letter.
+
+```
+chance.letter()
+chance.letter({ casing: Casing.lower })
+```
+
+By default it will return a random lowercase letter.
+
+```
+chance.letter();
+=> 'p'
+```
+
+It's possible to specify upper case
+
+```
+chance.letter({casing:  Casing.upper});
+=> 'A'
+```
+
+## natural
+
+```
+chance.natural()
+chance.natural({ max: 20 })
+```
+
+Return a natural number.
+
+```
+chance.natural();
+=> 125019392395
+```
+
+Can optionally provide a max.
+
+```
+chance.natural({ max: 20});
+=> 14
+```
+
+## prime
+
+Return a prime number.
+
+```
+chance.prime()
+chance.prime({ min: 1, max: 20 })
+```
+
+Return a prime number.
+
+default range: 0 to 10000
+
+```
+  chance.prime();
+  => 929
+```
+
+Can optionally provide a max.
+
+```
+chance.prime({ max: 20});
+=> 13
+```
+
+## string
+
+Return a random string.
+
+```
+chance.string()
+chance.string({ length: 5 })
+chance.string({ pool: 'abcde' })
+chance.string({ alpha: true })
+chance.string({ casing: 'lower' })
+chance.string({ symbols: true })
+```
+
+By default it will return a string with random length of 5-20 characters and will contain any of the following characters.
+
+```
+  'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()[]'
+```
+
+Can optionally specify a length and the string will be exactly that length.
+
+```
+  chance.string({ length: 5 });
+  => 'YN%fG'
+```
+
+Can optionally specify a pool and the string will be generated with characters only from that pool.
+
+```
+  chance.string({ pool: 'abcde' });
+  => 'cccdeeabedebb'
+```
+
+Of course these options can also be combined.
+
+```
+  chance.string({ length: 5, pool: 'abcde' });
+  => 'cbbdc'
+```
+
+All the options for chance.character() are supported:
+
+```
+  chance.string({ length: 8, casing: 'upper', alpha: true, numeric: true });
+  => '3THK7GB1'
+```
