@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      chance_dart_generator | chance_dart:
+        enabled: true
+
+builders:
+  chance_dart:
+    target: ":chance_dart"
+    import: "package:chance_dart/builder.dart"
+    builder_factories: ["chanceDart"]
+    build_extensions: {".dart": [".chance_dart.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
