@@ -22,6 +22,7 @@ void main() {
     test('verify paragraph equals the amount of sentences passed in', () {
       final sentences = Random().nextInt(50);
       final generatedParagraph = paragraph(sentences: sentences - 1);
+      print(generatedParagraph);
       expect(
         generatedParagraph.split('.').length,
         sentences,
