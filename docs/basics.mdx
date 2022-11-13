@@ -1,1 +1,57 @@
 # Basics
+
+## boolean
+
+Return a random boolean value (true or false).
+
+```
+chance.bool();
+=> true
+```
+
+## character
+
+Return a random character.
+
+```
+chance.character()
+chance.character({ pool: 'abcde' })
+chance.character({ alpha: true })
+chance.character({ numeric: true })
+chance.character({ casing: 'lower' })
+chance.character({ symbols: true })
+```
+
+By default it will return a string with random character from the following pool.
+
+```
+'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()'
+```
+
+Optionally specify a pool and the character will be generated with characters only from that pool.
+
+```
+chance.character({ pool: 'abcde' });
+=> 'c'
+```
+
+Optionally specify alpha for an alphabetic character.
+
+```
+chance.character({ alpha: true });
+=> 'N'
+```
+
+Optionally specify numeric for a numeric character.
+
+```
+chance.character({ numeric: true });
+=> '8'
+```
+
+Default includes both upper and lower case. It's possible to specify one or the other.
+
+```
+chance.character({ casing: Casing.lower });
+=> 'j'
+```
