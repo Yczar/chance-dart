@@ -62,26 +62,3 @@ Optionally return only symbols
 chance.character({ symbols: true });
 => '%'
 ```
-
-## falsy
-
-Return a random falsy value (false, null, undefined, 0, NaN, '').
-
-```
-chance.falsy();
-chance.falsy({ pool: {null, '', 0} });
-```
-
-By default it will generate any falsy value from this pool
-
-```
-{null, '', 0}
-```
-
-```
-chance.falsy();
-```
-
-The default pool can be change to better meet the needs:
-chance.falsy({ pool: {null, ''} });
-=> null
