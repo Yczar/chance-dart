@@ -1,18 +1,23 @@
 # Chance Dart - Beta
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/32166619/200453125-78c910e9-1400-4641-8720-6efe36b06b40.png" alt="docs.page" height="120" /> <br /><br />
+  <span>Random generator helper for Dart</span>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Yczar/chance-dart">Homepage</a> &bull; <a href="https://docs.page/Yczar/chance-dart">Documentation</a>
+</p>
 Check back in in few days for a stable version
 
-<img width="1080" alt="Screenshot 2022-11-08 at 02 38 49" src="https://user-images.githubusercontent.com/32166619/200453125-78c910e9-1400-4641-8720-6efe36b06b40.png">
-
 [![awesomeness](https://img.shields.io/badge/awesomeness-maximum-red.svg)](https://github.com/yczar/chance-dart)
-
-Chance - Random generator helper for Dart
-
-Homepage: [https://github.com/Yczar/chance-dart](https://github.com/Yczar/chance-dart)
-
+<br><br>
 Many more details on [https://github.com/Yczar/chance-dart](https://github.com/Yczar/chance-dart) but this single
 library can generate random numbers, characters, strings, names, addresses,
 dice, and pretty much anything else.
@@ -23,11 +28,11 @@ desired.
 
 ## Usage
 
-See the [full docs](https://github.com/Yczar/chance-dart) for details on installation and usage.
+See the [full docs](https://docs.page/Yczar/chance-dart) for details on installation and usage.
 
 ## Dependent tools
 
-- [Chance Dart CLI](https://github.com/chancejs/chance-cli) - Use Chance on the command line.
+- [Chance Dart CLI](https://github.com/Yczar/chance-dart-cli) - Use Chance on the command line.
 
 _Know a library that uses Chance that isn't here? Update the README and submit a PR!_
 
@@ -41,19 +46,9 @@ _Know a library that uses Chance that isn't here? Update the README and submit a
 
 Please feel free to reach out to me if you have any questions or suggestions.
 
-### Contributors
-
-THANK YOU!
-
 ## How to Contribute
 
-To start making contributions please refer to [`CONTRIBUTING.md`](./docs/CONTRIBUTING.md).
-
-Be a part of this project! You can run the test using the following.
-
-1. Install dependencies from pubspec.yaml by running `dart pub add`
-2. Run the test via `dart test`
-3. Make some fun new modules!
+To start making contributions please refer to [`Contribution Docs`](https://docs.page/Yczar/chance-dart/contributing).
 
 This project is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License) so feel free to hack away :)
 
