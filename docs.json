@@ -3,6 +3,17 @@
     "theme": "#36B9B9",
     "sidebar": [
       ["Home", "/"],
+      ["Basics", "/basics"],
+      ["Finance", "/finance"],
+      ["Helpers", "/helpers"],
+      ["Location", "/location"],
+      ["Miscellaneous", "/miscellaneous"],
+      ["Mobile", "/mobile"],
+      ["Music", "/music"],
+      ["Person", "/person"],
+      ["Text", "/text"],
+      ["Thing", "/thing"],
+      ["Time", "/time"],
       ["Another Page", "/another-page"]
     ]
   }
