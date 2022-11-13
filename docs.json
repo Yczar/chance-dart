@@ -3,16 +3,16 @@
     "theme": "#36B9B9",
     "sidebar": [
       ["Home", "/"],
-      ["Basics", "/basics"],
-      ["Finance", "/finance"],
-      ["Helpers", "/helpers"],
-      ["Location", "/location"],
-      ["Miscellaneous", "/miscellaneous"],
-      ["Mobile", "/mobile"],
-      ["Music", "/music"],
-      ["Person", "/person"],
-      ["Text", "/text"],
-      ["Thing", "/thing"],
-      ["Time", "/time"]
+      ["Basics", "/pages/basics"],
+      ["Finance", "/pages/finance"],
+      ["Helpers", "/pages/helpers"],
+      ["Location", "/pages/location"],
+      ["Miscellaneous", "/pages/miscellaneous"],
+      ["Mobile", "/pages/mobile"],
+      ["Music", "/pages/music"],
+      ["Person", "/pages/person"],
+      ["Text", "/pages/text"],
+      ["Thing", "/pages/thing"],
+      ["Time", "/pages/time"]
     ]
   }
