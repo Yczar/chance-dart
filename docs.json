@@ -3,7 +3,7 @@
     "theme": "#36B9B9",
     "sidebar": [
       ["Home", "/"],
-      ["Basics", "/pages/basics"],
+      ["Basics", "pages/basics"],
       ["Finance", "/pages/finance"],
       ["Helpers", "/pages/helpers"],
       ["Location", "/pages/location"],
