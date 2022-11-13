@@ -1,4 +1,7 @@
 # Chance Dart - Beta
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Check back in in few days for a stable version
 
@@ -55,3 +58,28 @@ Be a part of this project! You can run the test using the following.
 This project is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License) so feel free to hack away :)
 
 Proudly written in Nigeria.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/OokanNumber1"><img src="https://avatars.githubusercontent.com/u/88977598?v=4?s=100" width="100px;" alt="Mubaraq A. LAWAL"/><br /><sub><b>Mubaraq A. LAWAL</b></sub></a><br /><a href="https://github.com/Yczar/chance-dart/commits?author=OokanNumber1" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/Sir-Nath"><img src="https://avatars.githubusercontent.com/u/78961075?v=4?s=100" width="100px;" alt="Peter Nathaniel"/><br /><sub><b>Peter Nathaniel</b></sub></a><br /><a href="https://github.com/Yczar/chance-dart/commits?author=Sir-Nath" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/Yczar"><img src="https://avatars.githubusercontent.com/u/32166619?v=4?s=100" width="100px;" alt="Ayotomide"/><br /><sub><b>Ayotomide</b></sub></a><br /><a href="https://github.com/Yczar/chance-dart/commits?author=Yczar" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/developerjamiu"><img src="https://avatars.githubusercontent.com/u/50176100?v=4?s=100" width="100px;" alt="Jamiu Okanlawon"/><br /><sub><b>Jamiu Okanlawon</b></sub></a><br /><a href="https://github.com/Yczar/chance-dart/commits?author=developerjamiu" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
