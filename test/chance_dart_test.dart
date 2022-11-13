@@ -19,5 +19,7 @@ void main() {
       int result = milli.millisecond();
       expect(result, result);
     });
+
+    //note: the result and the expected value are the same because the expected value in this case is unknown
   });
 }
