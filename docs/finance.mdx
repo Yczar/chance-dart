@@ -1,1 +1,178 @@
 # Finance
+
+## cc type
+
+```
+chance.cc_type()
+chance.cc_type({raw: true})
+```
+
+Return a random credit card type.
+
+```
+chance.cc_type();
+=> 'visa'
+```
+
+## cc
+
+```
+chance.cc()
+chance.cc({type: 'Mastercard'})
+```
+
+Generate a random credit card number. This card number will pass the Luhn algorithm so it looks like a legit card.
+
+```
+chance.cc();
+=> '6304038511073827'
+```
+
+Optionally specify a particular type of card to return:
+
+```
+chance.cc({ccType: CCType.mastercard });
+=> '5171206237468496'
+```
+
+The types are enumerated below.
+
+```
+visa, mastercard, americanExpress, discover
+```
+
+## currency pair
+
+Generate a currency pair. Handy for simulating currency conversions. Guaranteed to return a unique pair (and not the same currency twice).
+
+```
+chance.currencyPair()
+```
+
+## currency
+
+```
+chance.currency();
+=> {
+    'symbol': symbol,
+    'name': name,
+    'symbol_native': symbolNative,
+    'decimal_digits': decimalDigits,
+    'rounding': rounding,
+    'code': code,
+    'name_plurals': namePlurals,
+}
+```
+
+## dollar
+
+```
+chance.dollar()
+chance.dollar({max: 250})
+```
+
+Return a random dollar amount.
+
+```
+chance.dollar();
+=> "$2560.27"
+
+chance.dollar();
+=> "$750.99"
+```
+
+By default returns dollar amount no larger than 10000. Optionally specify the max to make it larger (or smaller).
+
+```
+chance.dollar({max: 20});
+=> "$15.23"
+
+chance.dollar({max: 10000000})
+=> "$5051205.49"
+```
+
+## euro
+
+```
+chance.euro()
+chance.euro({max: 250})
+```
+
+Return a random euro amount. Formatting depends on the current locale (samples are displayed with european formatting)
+
+```
+chance.euro();
+=> "2.560,27€"
+
+chance.euro();
+=> "750.99€"
+```
+
+By default returns euro amount no larger than 10000. Optionally specify the max to make it larger (or smaller).
+
+```
+chance.euro({max: 20});
+=> "15,23€"
+
+chance.euro({max: 10000000})
+=> "5.051.205,49€"
+```
+
+## exp month
+
+```
+chance.expMonth()
+chance.expMonth({future: true})
+```
+
+Generate a random credit card expiration month.
+
+```
+chance.expMonth();
+=> '01'
+```
+
+Optionally specify that it must be a later month than the current month.
+
+```
+chance.expMonth({future: true});
+=> '10'
+```
+
+So if called in June, this would return a random month from July - Dec. If called in October, would return November or December.
+
+This because many credit card sandboxes require an expiration date later than the current date so it's necessary when generating an expiration with the current year to generate a month later than the current month.
+
+## exp year
+
+```
+chance.expYear()
+```
+
+Generate a random credit card expiration year.
+
+```
+chance.expYear();
+=> '2018'
+```
+
+Returns a random year between today and 10 years in the future.
+
+## exp
+
+```
+chance.exp();
+chance.exp({raw: true});
+```
+
+Generate a random credit card expiration.
+
+```
+chance.exp();
+=> '10/2020'
+```
+
+Optionally specify that a raw object be returned rather than a string
+
+chance.exp({raw: true});
+=> {month: '11', year: '2017'}
