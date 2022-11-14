@@ -5,6 +5,9 @@
       ["Overview", "/"],
       ["Basics", "/basics"],
       ["Finance", "/finance"],
+      ["Contributing", "/contributing"]
+    ],
+    "coming-soon": [
       ["Helpers", "/helpers"],
       ["Location", "/location"],
       ["Miscellaneous", "/miscellaneous"],
@@ -13,7 +16,7 @@
       ["Person", "/person"],
       ["Text", "/text"],
       ["Thing", "/thing"],
-      ["Time", "/time"],
-      ["Contributing", "/contributing"]
+      ["Time", "/time"]
     ]
   }
+
