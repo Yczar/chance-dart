@@ -1,7 +1,7 @@
 # Chance Dart - Beta
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <p align="center">
@@ -68,6 +68,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://github.com/developerjamiu"><img src="https://avatars.githubusercontent.com/u/50176100?v=4?s=100" width="100px;" alt="Jamiu Okanlawon"/><br /><sub><b>Jamiu Okanlawon</b></sub></a><br /><a href="https://github.com/Yczar/chance-dart/commits?author=developerjamiu" title="Code">💻</a></td>
       <td align="center"><a href="https://github.com/yusuf-umarr"><img src="https://avatars.githubusercontent.com/u/76850966?v=4?s=100" width="100px;" alt="Yusuf Umar"/><br /><sub><b>Yusuf Umar</b></sub></a><br /><a href="https://github.com/Yczar/chance-dart/commits?author=yusuf-umarr" title="Code">💻</a></td>
       <td align="center"><a href="https://github.com/Tamunorth"><img src="https://avatars.githubusercontent.com/u/77057934?v=4?s=100" width="100px;" alt="Tamunorth"/><br /><sub><b>Tamunorth</b></sub></a><br /><a href="https://github.com/Yczar/chance-dart/commits?author=Tamunorth" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/calebjesusegun"><img src="https://avatars.githubusercontent.com/u/13627142?v=4?s=100" width="100px;" alt="Caleb Jesusegun"/><br /><sub><b>Caleb Jesusegun</b></sub></a><br /><a href="https://github.com/Yczar/chance-dart/commits?author=calebjesusegun" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
