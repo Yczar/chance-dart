@@ -9,3 +9,4 @@ export 'src/exp_month.dart';
 export 'src/exp_year.dart';
 export 'src/exp_year.dart';
 export 'src/naira.dart';
+export 'src/cedi.dart';
