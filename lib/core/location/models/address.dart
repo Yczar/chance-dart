@@ -5,6 +5,7 @@ import 'package:equatable/equatable.dart';
 
 import 'package:chance_dart/core/location/models/coordinate.dart';
 
+/// a model representation of an address
 class Address extends Equatable {
   final String address1;
   final String address2;
@@ -12,6 +13,7 @@ class Address extends Equatable {
   final String state;
   final String postalCode;
   final Coordinate coordinates;
+
   const Address({
     required this.address1,
     required this.address2,
@@ -21,6 +23,19 @@ class Address extends Equatable {
     required this.state,
   });
 
+  /// Return a new Address object with the same values as this one, except for the values that are
+  /// explicitly overridden.
+  ///
+  /// Args:
+  ///   address1 (String): The first line of the address.
+  ///   address2 (String): address2 ?? this.address2,
+  ///   city (String): The city of the address.
+  ///   postalCode (String): The postal code of the address.
+  ///   coordinates (Coordinate): The coordinates of the address.
+  ///   state (String): The state of the address.
+  ///
+  /// Returns:
+  ///   A new instance of the Address class with the updated values.
   Address copyWith({
     String? address1,
     String? address2,
@@ -39,6 +54,10 @@ class Address extends Equatable {
     );
   }
 
+  /// It converts the object into a map.
+  ///
+  /// Returns:
+  ///   A map of the address object.
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'address1': address1,
@@ -50,6 +69,14 @@ class Address extends Equatable {
     };
   }
 
+  /// `Address.fromMap` is a factory constructor that takes a `Map<String, dynamic>` and returns an
+  /// `Address` object
+  ///
+  /// Args:
+  ///   map (Map<String, dynamic>): The map that contains the data to be converted to an Address object.
+  ///
+  /// Returns:
+  ///   A new instance of the Address class.
   factory Address.fromMap(Map<String, dynamic> map) {
     return Address(
       address1: map['address1'] as String,
@@ -62,8 +89,13 @@ class Address extends Equatable {
     );
   }
 
+  /// It converts the object to a map.
   String toJson() => json.encode(toMap());
 
+  /// It converts a JSON string into a Map object.
+  ///
+  /// Args:
+  ///   source (String): The JSON string to be converted to a Map.
   factory Address.fromJson(String source) =>
       Address.fromMap(json.decode(source) as Map<String, dynamic>);
 
