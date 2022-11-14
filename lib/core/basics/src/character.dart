@@ -10,7 +10,7 @@ const String _chars = '$_lowerCaseChars$_upperCaseChars$_numbers$_symbols';
 
 /// Return a random character.
 // => 'c'
-/// [Usage]
+/// Usage
 /// ```character()```
 /// ```character({ pool: 'abcde' })```
 /// ```chance.character({ alpha: true })```
@@ -23,7 +23,7 @@ String character({
 
   /// Optionally specify a pool and the character will be generated with characters only from that pool.
   /// By default it will return a string with random character from the following pool.
-  /// _[chars]
+  /// [_chars]
   String? pool,
 
   /// Optionally specify numeric for a numeric character.

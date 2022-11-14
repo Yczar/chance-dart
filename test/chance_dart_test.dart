@@ -15,7 +15,7 @@ void main() {
       // expect(awesome.isAwesome, isTrue);
     });
 
-    test("testing millisecond", () {
+    test('testing millisecond', () {
       int result = milli.millisecond();
       expect(result, result);
     });

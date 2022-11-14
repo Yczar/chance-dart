@@ -1,4 +1,4 @@
-const Set words = {
+const Set<String> words = {
   'hypothesize',
   'path',
   'thaw',

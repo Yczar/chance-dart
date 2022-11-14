@@ -1,4 +1,4 @@
-const Set sentences = {
+const Set<String> sentences = {
   'The bird had a belief that it was really a groundhog.',
   'For the 216th time, he said he would quit drinking soda after this last Coke.',
   'Tom got a small piece of pie.',

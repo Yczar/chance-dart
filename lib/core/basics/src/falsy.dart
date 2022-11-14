@@ -1,14 +1,14 @@
 import 'dart:math';
 
-const Set _falsyValues = {null, '', 0};
+const _falsyValues = {null, '', 0};
 
 /// Return a random falsy value (false, null, 0, '').
-/// [usages]
+/// ```usages```
 /// falsy()
 /// falsy({ pool: {null, '', 0} })
 dynamic falsy({
   /// The default pool can be changed to better meet the needs:
-  Set? pool,
+  Set<dynamic>? pool,
 }) {
   if (pool != null) {
     return pool.toList()[Random().nextInt(_falsyValues.length)];
