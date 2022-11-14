@@ -2,11 +2,22 @@ import 'dart:math';
 
 import 'package:chance_dart/chance_dart.dart';
 
+/// It takes in a credit card type and a length, and returns a valid credit card number
+///
+/// Args:
+///   ccType (CCType): The type of credit card you want to generate.
+///   visaLength (int): The length of the card number.
+///
+/// Returns:
+///   A string of numbers.
 String cc({
   CCType? ccType,
   int? visaLength,
 }) {
+  /// Checking if the ccType is visa and visaLength is not null.
   assert(visaLength != null && ccType != CCType.visa, '');
+
+  /// Checking if the visaLength is not null and if it is not 13 or 16.
   assert(visaLength != null && (visaLength != 13 || visaLength != 16));
   int pos = 0;
   List<int> str = List<int>.filled(16, 0);
