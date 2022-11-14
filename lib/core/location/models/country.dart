@@ -4,15 +4,26 @@ import 'dart:convert';
 import 'package:equatable/equatable.dart';
 
 class Country extends Equatable {
-  final String? name;
-  final String? dialCode;
-  final String? code;
   const Country({
     this.name,
     this.dialCode,
     this.code,
   });
+  final String? name;
+  final String? dialCode;
+  final String? code;
 
+  /// `copyWith` is a function that returns a new instance of the class with the same properties as the
+  /// original instance, except for the properties that are explicitly overridden
+  ///
+  /// Args:
+  ///   name (String): The name of the country.
+  ///   dialCode (String): The country's dial code.
+  ///   code (String): The country code.
+  ///
+  /// Returns:
+  ///   A new Country object with the same values as the original Country object, except for the values
+  /// that are passed in as arguments.
   Country copyWith({
     String? name,
     String? dialCode,
@@ -25,6 +36,10 @@ class Country extends Equatable {
     );
   }
 
+  /// It converts the object into a map.
+  ///
+  /// Returns:
+  ///   A map of the country's name, dial code, and code.
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'name': name,
@@ -33,6 +48,13 @@ class Country extends Equatable {
     };
   }
 
+  /// It creates a Country object from a map.
+  ///
+  /// Args:
+  ///   map (Map<String, dynamic>): The map that contains the data to be converted to a Country object.
+  ///
+  /// Returns:
+  ///   A Country object
   factory Country.fromMap(Map<String, dynamic> map) {
     return Country(
       name: map['name'] != null ? map['name'] as String : null,
@@ -41,8 +63,13 @@ class Country extends Equatable {
     );
   }
 
+  /// It converts the object to a map.
   String toJson() => json.encode(toMap());
 
+  /// It converts a JSON string into a Country object.
+  ///
+  /// Args:
+  ///   source (String): The JSON string to be converted to a Map.
   factory Country.fromJson(String source) =>
       Country.fromMap(json.decode(source) as Map<String, dynamic>);
 
