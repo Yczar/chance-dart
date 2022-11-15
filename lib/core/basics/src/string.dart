@@ -8,6 +8,18 @@ const String _symbols = '!@#\$%^&*()';
 const String _numbers = '0123456789';
 const String _chars = '$_lowerCaseChars$_upperCaseChars$_numbers$_symbols';
 
+/// It generates a random string of characters from a given string of characters
+///
+/// Args:
+///   length (int): The length of the string to be generated. Defaults to 5
+///   max (int): The maximum length of the string to be generated.
+///   pool (String): The characters to use for the random string.
+///   alpha (bool): If true, the string will only contain alphabetic characters.
+///   casing (Casing): The casing of the string to be generated.
+///   symbols (bool): If true, the string will contain symbols.
+///
+/// Returns:
+///   A string of random characters.
 String string({
   int length = 5,
   int? max,
@@ -38,6 +50,11 @@ String string({
   return _getRandomString(null, length: max ?? 5);
 }
 
+/// It generates a random string of characters from a given string of characters
+///
+/// Args:
+///   chars (String): The characters to use for the random string.
+///   length (int): The length of the string to be generated.
 String _getRandomString(String? chars, {int? length}) => String.fromCharCodes(
       Iterable.generate(
         length ?? 1,
