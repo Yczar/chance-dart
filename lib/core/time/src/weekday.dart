@@ -1,6 +1,9 @@
 import 'package:chance_dart/chance_dart.dart';
 
-/// returns a day of the week
+/// Return a random weekday.
+///
+/// Returns:
+///   A random weekday.
 String weekday() {
   final days = [
     'Sunday',
