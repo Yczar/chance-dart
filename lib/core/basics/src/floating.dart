@@ -1,5 +1,14 @@
 import 'dart:math';
 
+/// It returns a random double point number between min and max
+///
+/// Args:
+///   fixed (int): The number of decimal places to return.
+///   min (num): The minimum value of the random number.
+///   max (num): The maximum value of the random number.
+///
+/// Returns:
+///   A random floating number.
 double floating({
   int? fixed,
   num? min,
