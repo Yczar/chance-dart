@@ -5,5 +5,9 @@ import '../../core.dart';
 /// Returns:
 ///   The longitude of the address generared.
 double longitude() {
-  return address().coordinates.longitude;
+  final randomAddress = address();
+  if (randomAddress.coordinates?.longitude == null) {
+    return longitude();
+  }
+  return randomAddress.coordinates!.longitude!;
 }

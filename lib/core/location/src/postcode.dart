@@ -5,5 +5,9 @@ import 'package:chance_dart/chance_dart.dart';
 /// Returns:
 ///   The postal code randomly generated.
 String postCode() {
-  return address().postalCode;
+  final randomAddress = address();
+  if (randomAddress.postalCode == null) {
+    return postCode();
+  }
+  return randomAddress.postalCode!;
 }

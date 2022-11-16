@@ -5,5 +5,9 @@ import 'package:chance_dart/chance_dart.dart';
 /// Returns:
 ///   The latitude of the address of the restaurant.
 double latitude() {
-  return address().coordinates.latitude;
+  final randomAddress = address();
+  if (randomAddress.coordinates?.latitude == null) {
+    return latitude();
+  }
+  return randomAddress.coordinates!.latitude!;
 }

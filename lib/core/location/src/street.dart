@@ -5,5 +5,9 @@ import '../../core.dart';
 /// Returns:
 ///   The street from the randomly generated address.
 String street() {
-  return address().address1;
+  final randomAddress = address();
+  if (randomAddress.address1 == null) {
+    return street();
+  }
+  return randomAddress.address1!;
 }

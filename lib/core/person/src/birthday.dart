@@ -11,5 +11,5 @@ String birthday() {
   final parsedDate = DateTime.parse(user<User>().dob.toString());
 
   /// Using string interpolation to return the day, month, and year of the user's birthday.
-  return '${parsedDate.day} - ${parsedDate.month} - ${parsedDate.year}';
+  return '${parsedDate.day}-${parsedDate.month}-${parsedDate.year}';
 }
