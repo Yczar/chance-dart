@@ -1,5 +1,13 @@
 import '../../core.dart';
 
+/// It generates a paragraph of sentences.
+/// 
+/// Args:
+///   sentences (int): The number of sentences to generate.
+///   lineBreak (bool): if true, the paragraph will be separated by a line break. Defaults to true
+/// 
+/// Returns:
+///   A string
 String paragraph({
   int? sentences,
   bool lineBreak = true,
