@@ -1,10 +1,8 @@
 export 'basics/basics.dart';
 export 'finance/finance.dart';
-export 'helpers/helpers.dart';
 export 'location/location.dart';
 export 'miscellaneous/miscellaneous.dart';
 export 'mobile/mobile.dart';
-export 'music/music.dart';
 export 'person/person.dart';
 export 'text/text.dart';
 export 'thing/thing.dart';
