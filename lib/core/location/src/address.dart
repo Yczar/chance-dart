@@ -12,13 +12,13 @@ import '../constants/addresses.dart';
 ///   A random address from the list of addresses.
 Address address() {
   final decodedAddress = base64Decode(addresses);
-  final addressMap = jsonDecode(
+  final addressList = (jsonDecode(
     String.fromCharCodes(decodedAddress),
-  );
-  (addressMap as Map).forEach((key, value) {
-    addressMap[key] = Address.fromMap(value);
-  });
-  return addressMap.entries
-      .map((entry) => entry.value)
-      .toList()[Random().nextInt(addressMap.entries.length)];
+  )['addresses'] as List)
+      .map(
+        (userMap) => Address.fromMap(userMap),
+      )
+      .toList();
+
+  return addressList[Random().nextInt(addressList.length)];
 }

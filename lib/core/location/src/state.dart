@@ -5,5 +5,9 @@ import '../../core.dart';
 /// Returns:
 ///   The state of the address generated.
 String state() {
-  return address().state;
+  final randomAddress = address();
+  if (randomAddress.state == null) {
+    return state();
+  }
+  return randomAddress.state!;
 }

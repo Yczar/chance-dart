@@ -5,5 +5,9 @@ import 'package:chance_dart/chance_dart.dart';
 /// Returns:
 ///   The state of the address.
 String locale() {
-  return address().state;
+  final randomAddress = address();
+  if (randomAddress.state == null) {
+    return locale();
+  }
+  return randomAddress.state!;
 }
