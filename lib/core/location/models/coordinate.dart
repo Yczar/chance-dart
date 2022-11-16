@@ -7,8 +7,8 @@ class Coordinate extends Equatable {
     required this.latitude,
     required this.longitude,
   });
-  final double latitude;
-  final double longitude;
+  final double? latitude;
+  final double? longitude;
 
   /// "If the caller passes in a value for latitude, use that value, otherwise use the value of
   /// this.latitude."
@@ -53,8 +53,8 @@ class Coordinate extends Equatable {
   ///   A Coordinate object.
   factory Coordinate.fromMap(Map<String, dynamic> map) {
     return Coordinate(
-      latitude: map['latitude'] as double,
-      longitude: map['longitude'] as double,
+      latitude: map['latitude'] as double?,
+      longitude: map['longitude'] as double?,
     );
   }
 
@@ -72,5 +72,5 @@ class Coordinate extends Equatable {
   bool get stringify => true;
 
   @override
-  List<Object> get props => [latitude, longitude];
+  List<Object?> get props => [latitude, longitude];
 }

@@ -7,12 +7,12 @@ import 'package:chance_dart/core/location/models/coordinate.dart';
 
 /// a model representation of an address
 class Address extends Equatable {
-  final String address1;
-  final String address2;
-  final String city;
-  final String state;
-  final String postalCode;
-  final Coordinate coordinates;
+  final String? address1;
+  final String? address2;
+  final String? city;
+  final String? state;
+  final String? postalCode;
+  final Coordinate? coordinates;
 
   const Address({
     required this.address1,
@@ -64,7 +64,7 @@ class Address extends Equatable {
       'address2': address2,
       'city': city,
       'postalCode': postalCode,
-      'coordinates': coordinates.toMap(),
+      'coordinates': coordinates?.toMap(),
       'state': state,
     };
   }
@@ -79,10 +79,10 @@ class Address extends Equatable {
   ///   A new instance of the Address class.
   factory Address.fromMap(Map<String, dynamic> map) {
     return Address(
-      address1: map['address1'] as String,
-      address2: map['address2'] as String,
-      city: map['city'] as String,
-      postalCode: map['postalCode'] as String,
+      address1: map['address1'] as String?,
+      address2: map['address2'] as String?,
+      city: map['city'] as String?,
+      postalCode: map['postalCode'] as String?,
       coordinates:
           Coordinate.fromMap(map['coordinates'] as Map<String, dynamic>),
       state: map['state'],
@@ -103,7 +103,7 @@ class Address extends Equatable {
   bool get stringify => true;
 
   @override
-  List<Object> get props {
+  List<Object?> get props {
     return [
       address1,
       address2,
