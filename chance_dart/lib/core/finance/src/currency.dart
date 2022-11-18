@@ -24,8 +24,8 @@ Currency currency({
   if (currencyKeyToRemove != null) {
     (currencyMap as Map).remove(currencyKeyToRemove);
   }
-  (currencyMap as Map).forEach((key, value) {
-    currencyMap[key] = Currency.fromMap(value);
+  (currencyMap as Map<String, Currency>).forEach((key, value) {
+    currencyMap[key] = Currency.fromMap(value as Map<String, dynamic>);
   });
   return currencyMap.entries
       .map((entry) => entry.value)
