@@ -1,6 +1,7 @@
 import 'dart:math';
 
-/// Generate a random number between 0 and 1,000,000,000 (or a max value if provided).
+/// Generate a random number between 0 and 1,000,000,000
+/// (or a max value if provided).
 ///
 /// Args:
 ///   max (int): The maximum number that can be returned.

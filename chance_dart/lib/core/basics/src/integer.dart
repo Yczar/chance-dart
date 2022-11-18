@@ -1,6 +1,7 @@
 import 'dart:math';
 
-/// This function returns a random integer between 0 and 1,000,000,000. If you pass in a max value, it
+/// This function returns a random integer between 0 and 1,000,000,000. If you
+///  pass in a max value, it
 /// will return a random integer between 0 and the max value.
 ///
 /// Args:

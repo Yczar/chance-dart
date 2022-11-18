@@ -5,7 +5,8 @@ import 'package:chance_dart/core/location/models/address.dart';
 
 import '../constants/addresses.dart';
 
-/// It takes the addresses string, decodes it, parses it into a map, converts the map into a list of
+/// It takes the addresses string, decodes it, parses it into a map,
+/// converts the map into a list of
 /// addresses, and returns a random address from that list
 ///
 /// Returns:
@@ -14,9 +15,9 @@ Address address() {
   final decodedAddress = base64Decode(addresses);
   final addressList = (jsonDecode(
     String.fromCharCodes(decodedAddress),
-  )['addresses'] as List)
+  )['addresses'] as List<Map<String, dynamic>>)
       .map(
-        (userMap) => Address.fromMap(userMap),
+        Address.fromMap,
       )
       .toList();
 

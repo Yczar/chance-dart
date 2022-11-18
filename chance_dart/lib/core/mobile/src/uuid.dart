@@ -27,7 +27,8 @@ String generateUUID() {
 
 /// `(microSecond + Random().nextInt(99999999) * 16) % 16 | 0`
 ///
-/// The above function is a bitwise operation that returns a random number between 0 and 15
+/// The above function is a bitwise operation that returns a random number
+///  between 0 and 15
 ///
 /// Args:
 ///   c (String): The character to be replaced.

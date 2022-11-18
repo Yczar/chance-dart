@@ -1,6 +1,7 @@
 import 'dart:math';
 
-/// card enum called [CCType] with 4 values: visa, mastercard, americanExpress, discover.
+/// card enum called [CCType] with 4 values: visa, mastercard, americanExpress,
+///  discover.
 enum CCType { visa, mastercard, americanExpress, discover }
 
 /// It returns a random value from the [CCType] enum.

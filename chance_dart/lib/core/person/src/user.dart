@@ -8,7 +8,8 @@ import '../model/user.dart';
 /// It returns a new instance of a class that implements the [_User] interface
 T user<T>() => _User<T>().call();
 
-/// We're decoding the base64 encoded users string, converting it to a list of maps, and then converting
+/// We're decoding the base64 encoded users string, converting it to a list of
+///  maps, and then converting
 /// it to a list of User objects
 ///
 /// Returns:
@@ -16,13 +17,14 @@ T user<T>() => _User<T>().call();
 User _user() {
   final decodedUsers = base64Decode(users);
 
-  /// Decoding the base64 encoded users string, converting it to a list of maps, and then converting it
+  /// Decoding the base64 encoded users string, converting it to a list of maps,
+  ///  and then converting it
   /// to a list of User objects.
   final userList = (jsonDecode(
     String.fromCharCodes(decodedUsers),
-  )['users'] as List)
+  )['users'] as List<Map<String, dynamic>>)
       .map(
-        (userMap) => User.fromMap(userMap),
+        User.fromMap,
       )
       .toList();
 
@@ -30,16 +32,19 @@ User _user() {
   return userList[Random().nextInt(userList.length)];
 }
 
-/// _User<T> is a class that returns a User object, a Map object, or a String object, depending on the
+/// _User<T> is a class that returns a User object, a Map object, or a String
+/// object, depending on the
 /// type of T
 class _User<T> {
-  /// It's checking to see if the type of T is a String, User, Map, or dynamic. If it's not, then it
+  /// It's checking to see if the type of T is a String, User, Map, or dynamic.
+  ///  If it's not, then it
   /// throws an exception
   ///
   /// Returns:
   ///   The return type is [T].
   T call() {
-    /// It's checking to see if the type of T is a String, User, Map, or dynamic. If it's not, then it
+    /// It's checking to see if the type of T is a String, User, Map,
+    /// or dynamic. If it's not, then it
     /// throws an exception.
     if (T != String && T != User && T != Map && T != dynamic) {
       throw Exception(

@@ -10,7 +10,8 @@ class Coordinate extends Equatable {
   final double? latitude;
   final double? longitude;
 
-  /// "If the caller passes in a value for latitude, use that value, otherwise use the value of
+  /// "If the caller passes in a value for latitude, use that value, otherwise
+  /// use the value of
   /// this.latitude."
   ///
   /// The same logic applies to the longitude parameter
@@ -20,7 +21,8 @@ class Coordinate extends Equatable {
   ///   longitude (double): The longitude of the coordinate.
   ///
   /// Returns:
-  ///   A new Coordinate object with the same values as the original Coordinate object, except for the
+  ///   A new Coordinate object with the same values as the original Coordinate
+  ///  object, except for the
   /// values that are passed in as parameters.
   Coordinate copyWith({
     double? latitude,
@@ -43,11 +45,13 @@ class Coordinate extends Equatable {
     };
   }
 
-  /// `Coordinate.fromMap` is a factory constructor that takes a `Map<String, dynamic>` and returns a
+  /// `Coordinate.fromMap` is a factory constructor that takes a
+  /// `Map<String, dynamic>` and returns a
   /// `Coordinate` object
   ///
   /// Args:
-  ///   map (Map<String, dynamic>): The map that contains the data to be converted to a Coordinate object.
+  ///   map (Map<String, dynamic>): The map that contains the data to be
+  /// converted to a Coordinate object.
   ///
   /// Returns:
   ///   A Coordinate object.

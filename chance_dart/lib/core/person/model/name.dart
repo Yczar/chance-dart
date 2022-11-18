@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'package:equatable/equatable.dart';
 
 class Name extends Equatable {
-  /// A constructor that takes in the parameters and assigns them to the variables.
+  /// A constructor that takes in the parameters and assigns them to the
+  /// variables.
   const Name({
     this.title,
     this.first,
@@ -15,7 +16,8 @@ class Name extends Equatable {
   final String? first;
   final String? last;
 
-  /// If any of the parameters are passed in, use them, otherwise use the current value.
+  /// If any of the parameters are passed in, use them, otherwise use the
+  /// current value.
   ///
   /// Args:
   ///   title (String): The title of the person.
@@ -52,7 +54,8 @@ class Name extends Equatable {
   /// It creates a new Name object from a map.
   ///
   /// Args:
-  ///   map (Map<String, dynamic>): The map that contains the data to be converted to a Name object.
+  ///   map (Map<String, dynamic>): The map that contains the data to be
+  /// converted to a Name object.
   ///
   /// Returns:
   ///   A new instance of the Name class.
@@ -67,7 +70,8 @@ class Name extends Equatable {
   /// It converts the object to a map.
   String toJson() => json.encode(toMap());
 
-  /// `Name.fromMap` is a factory constructor that takes a `Map<String, dynamic>` and returns a `Name`
+  /// `Name.fromMap` is a factory constructor that takes a
+  /// `Map<String, dynamic>` and returns a `Name`
   /// object.
   ///
   /// Args:

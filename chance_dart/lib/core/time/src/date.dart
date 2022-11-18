@@ -1,5 +1,6 @@
-/// Return a string containing the current day, month, and year, separated by dashes.
-/// 
+/// Return a string containing the current day, month, and year, separated by
+/// dashes.
+///
 /// Returns:
 ///   A string with the current date.
 String date() {

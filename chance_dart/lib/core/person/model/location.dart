@@ -15,10 +15,12 @@ class Location extends Equatable {
     this.zip,
   });
 
-  /// "If the caller passes in a value for a parameter, use that value, otherwise use the value of the
+  /// "If the caller passes in a value for a parameter, use that value,
+  /// otherwise use the value of the
   /// corresponding field."
   ///
-  /// The copyWith function is a great example of the power of Dart's optional parameters
+  /// The copyWith function is a great example of the power of Dart's optional
+  /// parameters
   ///
   /// Args:
   ///   street (String): The street address of the location.
@@ -27,7 +29,8 @@ class Location extends Equatable {
   ///   zip (num): zip ?? this.zip,
   ///
   /// Returns:
-  ///   A new Location object with the same values as the original, except for the values that were passed
+  ///   A new Location object with the same values as the original, except for
+  ///  the values that were passed
   /// in.
   Location copyWith({
     String? street,
@@ -43,7 +46,8 @@ class Location extends Equatable {
     );
   }
 
-  /// `toMap()` returns a `Map<String, dynamic>` that contains the `street`, `city`, `state`, and `zip`
+  /// `toMap()` returns a `Map<String, dynamic>` that contains the `street`,
+  /// `city`, `state`, and `zip`
   /// values of the `Address` object
   ///
   /// Returns:
@@ -60,7 +64,8 @@ class Location extends Equatable {
   /// It creates a Location object from a map.
   ///
   /// Args:
-  ///   map (Map<String, dynamic>): The map that you want to convert to a Location object.
+  ///   map (Map<String, dynamic>): The map that you want to convert to a
+  /// Location object.
   ///
   /// Returns:
   ///   A new instance of the Location class.

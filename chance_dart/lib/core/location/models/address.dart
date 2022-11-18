@@ -1,9 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
-import 'package:equatable/equatable.dart';
-
 import 'package:chance_dart/core/location/models/coordinate.dart';
+import 'package:equatable/equatable.dart';
 
 /// a model representation of an address
 class Address extends Equatable {
@@ -23,7 +22,8 @@ class Address extends Equatable {
     required this.state,
   });
 
-  /// Return a new Address object with the same values as this one, except for the values that are
+  /// Return a new Address object with the same values as this one, except for
+  ///  the values that are
   /// explicitly overridden.
   ///
   /// Args:
@@ -69,11 +69,13 @@ class Address extends Equatable {
     };
   }
 
-  /// `Address.fromMap` is a factory constructor that takes a `Map<String, dynamic>` and returns an
+  /// `Address.fromMap` is a factory constructor that takes a
+  /// `Map<String, dynamic>` and returns an
   /// `Address` object
   ///
   /// Args:
-  ///   map (Map<String, dynamic>): The map that contains the data to be converted to an Address object.
+  ///   map (Map<String, dynamic>): The map that contains the data to be
+  /// converted to an Address object.
   ///
   /// Returns:
   ///   A new instance of the Address class.
@@ -85,7 +87,7 @@ class Address extends Equatable {
       postalCode: map['postalCode'] as String?,
       coordinates:
           Coordinate.fromMap(map['coordinates'] as Map<String, dynamic>),
-      state: map['state'],
+      state: map['state'] as String?,
     );
   }
 

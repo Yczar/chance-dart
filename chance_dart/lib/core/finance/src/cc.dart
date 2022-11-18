@@ -2,7 +2,8 @@ import 'dart:math';
 
 import 'package:chance_dart/chance_dart.dart';
 
-/// It takes in a credit card type and a length, and returns a valid credit card number
+/// It takes in a credit card type and a length, and returns a valid credit
+/// card number
 ///
 /// Args:
 ///   ccType (CCType): The type of credit card you want to generate.

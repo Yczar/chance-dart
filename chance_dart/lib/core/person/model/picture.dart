@@ -13,7 +13,8 @@ class Picture extends Equatable {
     this.thumbnail,
   });
 
-  /// If the caller passes in a value for a parameter, use that value, otherwise use the value of the
+  /// If the caller passes in a value for a parameter, use that value, otherwise
+  ///  use the value of the
   /// corresponding field.
   ///
   /// Args:
@@ -22,7 +23,8 @@ class Picture extends Equatable {
   ///   thumbnail (String): The URL of the thumbnail image.
   ///
   /// Returns:
-  ///   A new instance of the Picture class with the values of the original instance, but with the
+  ///   A new instance of the Picture class with the values of the original
+  ///  instance, but with the
   /// values of the parameters if they are not null.
   Picture copyWith({
     String? large,
@@ -51,7 +53,8 @@ class Picture extends Equatable {
   /// It creates a new instance of the Picture class from a map.
   ///
   /// Args:
-  ///   map (Map<String, dynamic>): The map of data that we're going to use to create the Picture
+  ///   map (Map<String, dynamic>): The map of data that we're going to use to
+  /// create the Picture
   /// object.
   factory Picture.fromMap(Map<String, dynamic> map) {
     return Picture(

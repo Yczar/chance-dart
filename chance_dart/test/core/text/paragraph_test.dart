@@ -12,8 +12,8 @@ void main() {
     });
 
     test(
-        'verify only one paragraph is generated whenever the function is being called without the number of sentences',
-        () {
+        'verify only one paragraph is generated whenever the function is being '
+        'called without the number of sentences', () {
       final generatedParagraph = paragraph();
       print(generatedParagraph.split('.').length);
       print(generatedParagraph);

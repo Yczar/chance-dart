@@ -3,7 +3,8 @@ import 'dart:math';
 
 import 'package:chance_dart/core/text/constants/syllables.dart';
 
-/// It takes a string, decodes it from base64, parses it as JSON, and returns a random element from the
+/// It takes a string, decodes it from base64, parses it as JSON, and returns a
+/// random element from the
 /// list of syllables that matches the input string
 ///
 /// Args:
@@ -16,6 +17,6 @@ String syllable(String count) {
   final addressMap = jsonDecode(
     String.fromCharCodes(decodedAddress),
   );
-  final selectedSyllables = (addressMap as Map)[count] as List;
+  final selectedSyllables = (addressMap as Map)[count] as List<String>;
   return selectedSyllables[Random().nextInt(selectedSyllables.length)];
 }

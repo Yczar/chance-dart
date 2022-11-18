@@ -1,9 +1,8 @@
 import 'dart:convert';
 
-import 'package:equatable/equatable.dart';
-
 import 'package:chance_dart/core/person/model/location.dart';
 import 'package:chance_dart/core/person/model/name.dart';
+import 'package:equatable/equatable.dart';
 
 import 'picture.dart';
 
@@ -41,7 +40,8 @@ class User extends Equatable {
   final String? pps;
   final Picture? picture;
 
-  /// It creates a new User object with the same values as the current User object, but with the values
+  /// It creates a new User object with the same values as the current User
+  /// object, but with the values
   /// of the parameters replacing the values of the current User object.
   ///
   /// Args:
@@ -50,7 +50,8 @@ class User extends Equatable {
   ///   location (Location): Location? location,
   ///   username (String): The username of the user.
   ///   password (String): password ?? this.password,
-  ///   salt (String): A random string of characters used as an additional input to a one-way function
+  ///   salt (String): A random string of characters used as an additional
+  /// input to a one-way function
   /// that hashes a password.
   ///   md5 (String): The md5 hash of the user's email address.
   ///   sha1 (String): String?
@@ -127,7 +128,8 @@ class User extends Equatable {
   /// It creates a User object from a map.
   ///
   /// Args:
-  ///   map (Map<String, dynamic>): The map that contains the data to be converted to a User object.
+  ///   map (Map<String, dynamic>): The map that contains the data to be
+  /// converted to a User object.
   ///
   /// Returns:
   ///   A User object

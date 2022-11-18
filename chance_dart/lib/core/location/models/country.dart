@@ -13,8 +13,10 @@ class Country extends Equatable {
   final String? dialCode;
   final String? code;
 
-  /// `copyWith` is a function that returns a new instance of the class with the same properties as the
-  /// original instance, except for the properties that are explicitly overridden
+  /// `copyWith` is a function that returns a new instance of the class with
+  /// the same properties as the
+  /// original instance, except for the properties
+  /// that are explicitly overridden
   ///
   /// Args:
   ///   name (String): The name of the country.
@@ -22,7 +24,8 @@ class Country extends Equatable {
   ///   code (String): The country code.
   ///
   /// Returns:
-  ///   A new Country object with the same values as the original Country object, except for the values
+  ///   A new Country object with the same values as the original
+  /// Country object, except for the values
   /// that are passed in as arguments.
   Country copyWith({
     String? name,
@@ -51,7 +54,8 @@ class Country extends Equatable {
   /// It creates a Country object from a map.
   ///
   /// Args:
-  ///   map (Map<String, dynamic>): The map that contains the data to be converted to a Country object.
+  ///   map (Map<String, dynamic>): The map that contains the data to be
+  /// converted to a Country object.
   ///
   /// Returns:
   ///   A Country object

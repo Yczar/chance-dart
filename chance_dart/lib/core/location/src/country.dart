@@ -13,9 +13,9 @@ Country country() {
   final decodedCountry = base64Decode(countries);
   final countryList = (jsonDecode(
     String.fromCharCodes(decodedCountry),
-  )['countries'] as List)
+  )['countries'] as List<Map<String, dynamic>>)
       .map(
-        (userMap) => Country.fromMap(userMap),
+        Country.fromMap,
       )
       .toList();
 

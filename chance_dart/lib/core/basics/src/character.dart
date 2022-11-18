@@ -21,15 +21,18 @@ const String _chars = '$_lowerCaseChars$_upperCaseChars$_numbers$_symbols';
 String character({
   bool? alpha,
 
-  /// Optionally specify a pool and the character will be generated with characters only from that pool.
-  /// By default it will return a string with random character from the following pool.
+  /// Optionally specify a pool and the character will be generated with
+  /// characters only from that pool.
+  /// By default it will return a string with random character from the
+  /// following pool.
   /// [_chars]
   String? pool,
 
   /// Optionally specify numeric for a numeric character.
   bool? numeric,
 
-  /// Default includes both upper and lower case. It's possible to specify one or the other.
+  /// Default includes both upper and lower case. It's possible to specify
+  /// one or the other.
   Casing? casing,
 
   /// Optionally return only symbols

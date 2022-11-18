@@ -1,6 +1,7 @@
 import 'package:chance_dart/chance_dart.dart';
 
-/// Generate a random integer between the current year and the current year plus 10.
+/// Generate a random integer between the current year and the current year
+/// plus 10.
 ///
 /// Returns:
 ///   A random integer between the current year and 10 years from now.

@@ -1,5 +1,5 @@
-import 'package:test/test.dart';
 import 'package:chance_dart/core/time/src/second.dart';
+import 'package:test/test.dart';
 
 void main() {
   test('second ... should return a valid second', () {

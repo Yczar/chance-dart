@@ -1,6 +1,7 @@
 import '../../core.dart';
 
-/// It returns a random number between the min and max values, with a fixed number of decimal places
+/// It returns a random number between the min and max values, with a fixed
+/// number of decimal places
 ///
 /// Args:
 ///   max (int): The maximum value of the number to be generated.
