@@ -14,5 +14,6 @@ CCType ccType() {
 
   /// Creating a list from the [CCType] enum and shuffling it.
   var list = List<CCType>.from(CCType.values)..shuffle();
-  return list.take(rndNumber).toList().first;
+  print(rndNumber);
+  return list.take(rndNumber == 0 ? 1 : rndNumber).toList().first;
 }
