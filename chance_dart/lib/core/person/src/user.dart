@@ -22,9 +22,9 @@ User _user() {
   /// to a list of User objects.
   final userList = (jsonDecode(
     String.fromCharCodes(decodedUsers),
-  )['users'] as List<Map<String, dynamic>>)
+  )['users'] as List)
       .map(
-        User.fromMap,
+        (userMap) => User.fromMap(userMap as Map<String, dynamic>),
       )
       .toList();
 
