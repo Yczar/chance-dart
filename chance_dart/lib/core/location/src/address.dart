@@ -15,9 +15,9 @@ Address address() {
   final decodedAddress = base64Decode(addresses);
   final addressList = (jsonDecode(
     String.fromCharCodes(decodedAddress),
-  )['addresses'] as List<Map<String, dynamic>>)
+  )['addresses'] as List)
       .map(
-        Address.fromMap,
+        (addressMap) => Address.fromMap(addressMap as Map<String, dynamic>),
       )
       .toList();
 
