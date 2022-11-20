@@ -1,0 +1,103 @@
+import 'package:chance_dart/chance_dart.dart';
+
+dynamic aliasToFunction(
+  ChanceAlias alias, [
+  dynamic extraValue,
+]) {
+  switch (alias) {
+    case ChanceAlias.falsy:
+      return falsy();
+    case ChanceAlias.boolean:
+      return boolean();
+    case ChanceAlias.character:
+      return character();
+    case ChanceAlias.floating:
+      return floating();
+    case ChanceAlias.integer:
+      return integer();
+    case ChanceAlias.letter:
+      return letter();
+    case ChanceAlias.natural:
+      return natural();
+    case ChanceAlias.prime:
+      return prime();
+    case ChanceAlias.string:
+      return string();
+    case ChanceAlias.template:
+      return template(extraValue as String);
+    case ChanceAlias.ccType:
+      return ccType();
+    case ChanceAlias.cc:
+      return cc();
+    case ChanceAlias.cedi:
+      return cedi();
+    case ChanceAlias.currenyPair:
+      return currencyPair();
+    case ChanceAlias.currency:
+      return currency();
+    case ChanceAlias.dollar:
+      return dollar();
+    case ChanceAlias.euro:
+      return euro();
+    case ChanceAlias.expMonth:
+      return expMonth();
+    case ChanceAlias.expYear:
+      return expYear();
+    case ChanceAlias.exp:
+      return exp();
+    case ChanceAlias.naira:
+      return naira();
+    case ChanceAlias.address:
+      return address();
+    case ChanceAlias.altitude:
+      return '';
+    case ChanceAlias.areaCode:
+      return areaCode();
+    case ChanceAlias.city:
+      return city();
+    case ChanceAlias.coordinates:
+      return coordinates();
+    case ChanceAlias.country:
+      return country();
+    case ChanceAlias.depth:
+      return 0;
+    case ChanceAlias.geohash:
+      return geohash();
+    case ChanceAlias.latitude:
+      return latitude();
+    case ChanceAlias.locale:
+      return locale();
+    case ChanceAlias.longitude:
+      return longitude();
+    case ChanceAlias.phone:
+      return phone();
+    case ChanceAlias.postal:
+      return postal();
+    case ChanceAlias.postCode:
+      return postCode();
+    case ChanceAlias.province:
+      return '';
+    case ChanceAlias.state:
+      return state();
+    case ChanceAlias.street:
+      return street();
+    case ChanceAlias.age:
+      return age();
+    case ChanceAlias.birthday:
+      return birthday();
+    case ChanceAlias.firstName:
+      return firstName();
+    case ChanceAlias.fullName:
+      return fullName();
+    case ChanceAlias.gender:
+      return gender();
+    case ChanceAlias.lastName:
+      return lastName();
+    case ChanceAlias.personTitle:
+      return personTitle();
+    case ChanceAlias.ssn:
+      return ssn();
+    case ChanceAlias.zip:
+      return 0;
+  }
+}
