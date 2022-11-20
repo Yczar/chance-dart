@@ -15,11 +15,27 @@ String cc({
   CCType? ccType,
   int? visaLength,
 }) {
+  // ccType = CCType.mastercard;
+  final visaTypeCheck = visaLength != null && ccType != CCType.visa;
+  final visaLengthCheck =
+      visaLength != null && (visaLength != 13 || visaLength != 16);
+
   /// Checking if the ccType is visa and visaLength is not null.
-  assert(visaLength != null && ccType != CCType.visa, '');
+  assert(visaTypeCheck, '');
 
   /// Checking if the visaLength is not null and if it is not 13 or 16.
-  assert(visaLength != null && (visaLength != 13 || visaLength != 16));
+  assert(visaLengthCheck);
+  // if (visaTypeCheck) {
+  //   throw ChanceException(
+  //     message: 'visalength can only be assigned to visa cards',
+  //   );
+  // }
+  // if (!visaLengthCheck) {
+  //   throw ChanceException(
+  //     message: 'Card length not valid',
+  //   );
+  // }
+
   int pos = 0;
   List<int> str = List<int>.filled(16, 0);
   num finalDigit;
@@ -30,9 +46,7 @@ String cc({
   if (ccType == CCType.visa) {
     str[0] = 4;
     pos = 1;
-    if (visaLength != null) {
-      length = visaLength;
-    }
+    length = visaLength!;
   } else if (ccType == CCType.mastercard) {
     str[0] = 5;
     tracker = (Random().nextDouble() * 5).floor() % 5;
