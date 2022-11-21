@@ -2,51 +2,111 @@ import 'package:chance_dart/chance_dart.dart';
 
 dynamic aliasToFunction(
   ChanceAlias alias, [
+  Map<String, dynamic> args = const {},
   dynamic extraValue,
 ]) {
+  final fixed = args['fixed'];
+  final max = args['max'];
+  final min = args['min'];
+  final casing = args['casing'];
+  final alpha = args['alpha'];
+  final length = args['length'];
+  final pool = args['pool'];
+  final symbols = args['symbols'];
+  final template = args['template'];
+  final ccType = args['cc_type'] ?? args['ccType'];
+  final currencyKeyToRemove =
+      args['currencyKeyToRemove'] ?? args['currency_key_to_remove'];
+  final future = args['future'];
+
   switch (alias) {
     case ChanceAlias.falsy:
       return falsy();
     case ChanceAlias.boolean:
       return boolean();
     case ChanceAlias.character:
-      return character();
+      return character(
+        alpha: alpha,
+      );
     case ChanceAlias.floating:
-      return floating();
+      return floating(
+        fixed: fixed,
+        max: max,
+        min: min,
+      );
     case ChanceAlias.integer:
-      return integer();
+      return integer(
+        max: max,
+      );
     case ChanceAlias.letter:
-      return letter();
+      return letter(
+        casing: casing,
+      );
     case ChanceAlias.natural:
-      return natural();
+      return natural(
+        max: max,
+      );
     case ChanceAlias.prime:
-      return prime();
+      return prime(
+        max: max,
+      );
     case ChanceAlias.string:
-      return string();
+      return string(
+        alpha: alpha,
+        casing: casing,
+        length: length,
+        max: max,
+        pool: pool,
+        symbols: symbols,
+      );
     case ChanceAlias.template:
-      return template(extraValue as String);
+      return template(
+        template,
+      );
     case ChanceAlias.ccType:
       return ccType();
     case ChanceAlias.cc:
-      return cc();
+      return cc(
+        ccType: ccType,
+      );
     case ChanceAlias.cedi:
-      return cedi();
+      return cedi(
+        fixed: fixed,
+        max: max,
+        min: min,
+      );
     case ChanceAlias.currenyPair:
       return currencyPair();
     case ChanceAlias.currency:
-      return currency();
+      return currency(
+        currencyKeyToRemove: currencyKeyToRemove,
+      );
     case ChanceAlias.dollar:
-      return dollar();
+      return dollar(
+        fixed: fixed,
+        max: max,
+        min: min,
+      );
     case ChanceAlias.euro:
-      return euro();
+      return euro(
+        fixed: fixed,
+        max: max,
+        min: min,
+      );
     case ChanceAlias.expMonth:
-      return expMonth();
+      return expMonth(
+        future: future,
+      );
     case ChanceAlias.expYear:
       return expYear();
     case ChanceAlias.exp:
       return exp();
     case ChanceAlias.naira:
-      return naira();
+      return naira(
+        fixed: fixed,
+        max: max,
+        min: min,
+      );
     case ChanceAlias.address:
       return address();
     case ChanceAlias.altitude:
@@ -99,5 +159,8 @@ dynamic aliasToFunction(
       return ssn();
     case ChanceAlias.zip:
       return 0;
+    case ChanceAlias.user:
+      // TODO: Handle this case.
+      break;
   }
 }
