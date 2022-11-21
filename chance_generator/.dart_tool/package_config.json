@@ -87,7 +87,7 @@
     },
     {
       "name": "chance_dart",
-      "rootUri": "../../chance_dart",
+      "rootUri": "file:///Users/czar/.pub-cache/hosted/pub.dartlang.org/chance_dart-0.0.3-beta",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
@@ -434,7 +434,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-11-18T17:57:17.582573Z",
+  "generated": "2022-11-21T21:52:03.426477Z",
   "generator": "pub",
   "generatorVersion": "2.18.4"
 }
