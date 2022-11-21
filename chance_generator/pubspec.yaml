@@ -1,7 +1,7 @@
 name: chance_generator
 description: Extension for Chance Dart for generating random data
-version: 0.0.1
-publish_to: none
+version: 0.0.1-beta
+homepage: https://github.com/Yczar/chance-dart
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -9,8 +9,7 @@ environment:
 dependencies:
   build: ^2.0.0
   source_gen: ^1.0.0
-  chance_dart: 
-    path: ../chance_dart
+  chance_dart: ^0.0.3-beta
   analyzer: ">=4.6.0 <6.0.0"
   source_helper: ^1.1.0
 
