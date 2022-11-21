@@ -7,10 +7,18 @@ class WrapperField {
   // final int index;
   final String name;
   final ChanceAlias alias;
+
+  final Map<String, dynamic> args;
   final DartType type;
   final DartObject? defaultValue;
 
-  WrapperField(this.name, this.type, this.defaultValue, this.alias);
+  WrapperField(
+    this.name,
+    this.type,
+    this.defaultValue,
+    this.alias,
+    this.args,
+  );
 }
 
 abstract class Builder {
