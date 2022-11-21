@@ -1,22 +1,54 @@
 import 'package:chance_dart/chance_dart.dart';
 
+/// It takes in a [ChanceAlias] and a [Map] of arguments and returns a dynamic value
+///
+/// Args:
+///   alias (ChanceAlias): The alias of the function to call.
+///   args (Map<String, dynamic>): The arguments passed to the function. Defaults to const {}
+///   extraValue (dynamic): This is the value that will be returned if the alias is not found.
+///
+/// Returns:
+///   A function that takes a [ChanceAlias] and returns a dynamic value.
+
 dynamic aliasToFunction(
   ChanceAlias alias, [
   Map<String, dynamic> args = const {},
   dynamic extraValue,
 ]) {
   final fixed = args['fixed'];
+
+  ///
   final max = args['max'];
+
+  ///
   final min = args['min'];
+
+  ///
   final casing = args['casing'];
+
+  ///
   final alpha = args['alpha'];
+
+  ///
   final length = args['length'];
+
+  ///
   final pool = args['pool'];
+
+  ///
   final symbols = args['symbols'];
+
+  ///
   final template = args['template'];
+
+  ///
   final ccType = args['cc_type'] ?? args['ccType'];
+
+  ///
   final currencyKeyToRemove =
       args['currencyKeyToRemove'] ?? args['currency_key_to_remove'];
+
+  ///
   final future = args['future'];
 
   switch (alias) {
@@ -142,7 +174,9 @@ dynamic aliasToFunction(
     case ChanceAlias.street:
       return street();
     case ChanceAlias.age:
-      return age();
+      return age(
+        max: max,
+      );
     case ChanceAlias.birthday:
       return birthday();
     case ChanceAlias.firstName:
@@ -159,8 +193,5 @@ dynamic aliasToFunction(
       return ssn();
     case ChanceAlias.zip:
       return 0;
-    case ChanceAlias.user:
-      // TODO: Handle this case.
-      break;
   }
 }
