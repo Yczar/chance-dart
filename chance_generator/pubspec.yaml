@@ -9,7 +9,7 @@ environment:
 dependencies:
   build: ^2.0.0
   source_gen: ^1.0.0
-  chance_dart: ^0.0.3-beta
+  chance_dart: ^0.0.4-beta
   analyzer: ">=4.6.0 <6.0.0"
   source_helper: ^1.1.0
 
