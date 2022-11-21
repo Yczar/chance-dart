@@ -16,6 +16,8 @@ class User {
     required this.walletInNaira,
     // required this.creditCardNumber,
     required this.walletInEuro,
+    required this.ssn,
+    required this.floatingNumber,
   });
   @ChanceField(
     alias: ChanceAlias.lastName,
@@ -27,10 +29,10 @@ class User {
   )
   final String firstName;
 
-  @ChanceField(
-    alias: ChanceAlias.age,
-  )
-  final String age;
+  @ChanceField(alias: ChanceAlias.age, args: {
+    'max': 30,
+  })
+  final int age;
 
   @ChanceField(
     alias: ChanceAlias.gender,
@@ -67,6 +69,18 @@ class User {
     args: {},
   )
   final String walletInEuro;
+
+  @ChanceField(
+    alias: ChanceAlias.ssn,
+    args: {},
+  )
+  final String ssn;
+
+  @ChanceField(
+    alias: ChanceAlias.floating,
+    args: {},
+  )
+  final double floatingNumber;
 
   // @ChanceField(
   //   alias: ChanceAlias.cc,
