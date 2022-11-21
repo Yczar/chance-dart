@@ -8,7 +8,10 @@ void main() {
     // Generate random address
     print(chance.address().toJson());
     // Generate random age
-    print(chance.age());
+    print('AGE');
+    print(chance.age(
+      max: 100,
+    ));
     // Generate random amPm
     print(chance.amPm());
     // Generate random age
