@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:chance_dart/chance_dart.dart';
 
 part 'user.g.dart';
@@ -65,6 +64,7 @@ class User {
 
   @ChanceField(
     alias: ChanceAlias.euro,
+    args: {},
   )
   final String walletInEuro;
 
