@@ -3,7 +3,7 @@
     "theme": "#36B9B9",
     "sidebar": [
       ["Overview", "/"],
-      ["Quick Start", "/quick_start"],
+      ["Quick Start", "/quickstart"],
       ["Basics", "/basics"],
       ["Finance", "/finance"],
       ["Contributing", "/contributing"]
