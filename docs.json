@@ -4,9 +4,19 @@
     "sidebar": [
       ["Overview", "/"],
       ["Quick Start", "/quickstart"],
-      ["Categories", [["Basics", "/basics"]]],
-      ["Basics", "/basics"],
-      ["Finance", "/finance"],
+      ["Categories", [[
+        "Basics", "/basics",
+        "Finance", "/finance",
+        "Helpers", "/helpers",
+        "Miscellaneous", "/miscellaneous",
+        "Mobile", "/mobile",
+        "Music", "/music",
+        "Person", "/person",
+        "Text", "/text",
+        "Thing", "/thing",
+        "Time", "/time"
+        
+        ]]],
       ["Contributing", "/contributing"]
     ],
     "coming-soon": [
