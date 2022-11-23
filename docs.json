@@ -4,7 +4,7 @@
     "sidebar": [
       ["Overview", "/"],
       ["Quick Start", "/quickstart"],
-      ["Categories", ["Basics", "/basics"]],
+      ["Categories", [["Basics", "/basics"]]],
       ["Basics", "/basics"],
       ["Finance", "/finance"],
       ["Contributing", "/contributing"]
