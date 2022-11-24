@@ -1,7 +1,9 @@
 # Chance Dart - Beta
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <p align="center">
@@ -15,6 +17,7 @@
 Check back in in few days for a stable version
 
 [![awesomeness](https://img.shields.io/badge/awesomeness-maximum-red.svg)](https://github.com/yczar/chance-dart)
+[![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 <br><br>
 Many more details on [https://github.com/Yczar/chance-dart](https://github.com/Yczar/chance-dart) but this single
 library can generate random numbers, characters, strings, names, addresses,
