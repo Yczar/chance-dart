@@ -1,3 +1,5 @@
 chance_generator/.dart_tool/package_config.json
 chance_generator/pubspec.lock
 chance_generator/.dart_tool/build/entrypoint/.packageLocations
+chance_generator/.dart_tool/build/entrypoint/build.dart
+chance_generator/.dart_tool/build/entrypoint/build.dart.dill
