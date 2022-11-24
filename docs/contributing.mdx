@@ -35,3 +35,44 @@ new tests, use the existing tests as a guideline for what they should look like.
 
 Before you send your pull request, make sure all the tests pass! Just run
 `pub run test`.
+
+### Contribution Guide
+  **_Steps to collaborate on the repository for project members._**
+  ### Forking and Cloning Repo
+  * Fork the project.  
+  * Click on the "Code" button on the Repo page.
+  * Copy the URL for the forked Repo "https://github.com/your-github-username/chance-dart.git"
+  * Open your Code Editor and  run `git clone` "https://github.com/your-github-username/chance-dart.git"
+  
+  ### _Add "Remote To" and "Pull From" Upstream_
+  * Add a Remote to Upstream to your Repo:
+      Using the command : `git remote add upstream` ` "https://github.com/your-github-username/branch-name" ` 
+  * Pull from upstream to download all changes in the project using `git pull upstream develop`
+
+  ### _Check issues available_
+  **Before contributing:**
+    * You should check the list of issues available
+    * Note down the issue number you are interested in
+    * The issue number will be needed when making PR
+
+  ### _Complete assigned task/issue_
+  * Open the project in your IDE or Code Editor.
+  * Complete your assigned task.
+
+
+  ### _Create and Commit Changes to a New Branch_
+  When your task is completed:
+  * Create a new branch with your task name e.g "feat- UpdatedDocs". 
+  * run: `git checkout -b feat/yourTask`
+  **Push to github;**
+  * `git add .`
+  * `git commit -m "feat: Inplemented yourTask"`
+  
+  ### Push New Branch to "Origin" Repository
+  * To make sure there are no conflict, Pull from upstream using `git pull upstream develop`
+  * Push your branch changes to the Repo using `git push origin "feat/yourTask"` note how it end with a branch.
+
+  ### Creating Pull Request
+  **When making a PR, your PR is expected to have the following comments"**
+  * What is the task/issue completed?
+  * What does the PR actually do?

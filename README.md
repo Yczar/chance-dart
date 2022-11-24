@@ -16,6 +16,15 @@ Check back in in few days for a stable version
 
 [![awesomeness](https://img.shields.io/badge/awesomeness-maximum-red.svg)](https://github.com/yczar/chance-dart)
 <br><br>
+
+## Overview
+
+Chance Dart is a free Open Source project that lets you create random strings, integers, and other things to help with tiresome tasks, especially when building automated tests or wherever else you require anything random.
+
+Data generation is an important part of many projects especially projects that requires code generation and mocking of data.
+
+Chance Dart is developed to deliver instant values to ensure speediness in development process and also reduce monotony.
+
 Many more details on [https://github.com/Yczar/chance-dart](https://github.com/Yczar/chance-dart) but this single
 library can generate random numbers, characters, strings, names, addresses,
 dice, and pretty much anything else.
@@ -51,6 +60,23 @@ To start making contributions please refer to [`Contribution Docs`](https://docs
 This project is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License) so feel free to hack away :)
 
 Proudly written in Nigeria.
+
+## Code Style
+  **i. Naming Convention:**
+
+|Naming Convention|Effective Style|Example|   
+|-----------------|---------------|-------|
+|Classes, enum types,typedefs,and type parameters,etensions|PascalCase|An example is ChanceField|
+|Libraries, packages, directories, and source files, import prefixes|snake_case|An example is currency_list|
+|Class members, top-level definitions, variables, parameters, and named parameters, constants|camelCase|An example is currencyList|
+
+   
+  **ii. Style Rule**
+   * Always declare return types in your methods.
+   * Put required named parameters first.
+   * Always require non-null named parameters (@required).
+   * Indent your code where appropriate `(e.g Use two-space indentation.)`
+      
 
 ## Contributors ✨
 
