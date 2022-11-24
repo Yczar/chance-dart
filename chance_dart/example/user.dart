@@ -19,6 +19,11 @@ class User {
     required this.ssn,
     required this.floatingNumber,
   });
+
+  ///
+  static User generatedUser() => generatedModel();
+  static List<User> generatedData() => generatedModels();
+
   @ChanceField(
     alias: ChanceAlias.lastName,
   )

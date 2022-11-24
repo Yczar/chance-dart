@@ -45,11 +45,20 @@ dynamic aliasToFunction(
   final ccType = args['cc_type'] ?? args['ccType'];
 
   ///
+  final count = args['count'];
+
+  ///
   final currencyKeyToRemove =
       args['currencyKeyToRemove'] ?? args['currency_key_to_remove'];
 
   ///
   final future = args['future'];
+
+  ///
+  final lineBreak = args['lineBreak'] ?? args['line_break'];
+
+  ///
+  final sentences = args['sentences'];
 
   switch (alias) {
     case ChanceAlias.falsy:
@@ -193,5 +202,41 @@ dynamic aliasToFunction(
       return ssn();
     case ChanceAlias.zip:
       return 0;
+    case ChanceAlias.paragraph:
+      return paragraph(
+        lineBreak: lineBreak,
+        sentences: sentences,
+      );
+    case ChanceAlias.sentence:
+      return sentence();
+    case ChanceAlias.syllable:
+      return syllable(count);
+    case ChanceAlias.animal:
+      return animal();
+    case ChanceAlias.amPm:
+      return amPm();
+    case ChanceAlias.date:
+      return date();
+    case ChanceAlias.hour:
+      return hour();
+    case ChanceAlias.millisecond:
+      return millisecond();
+    case ChanceAlias.minute:
+      return minute();
+    case ChanceAlias.month:
+      return month();
+    case ChanceAlias.second:
+      return second();
+    case ChanceAlias.timestamp:
+      return timeStamp();
+    case ChanceAlias.timezone:
+      return '';
+    case ChanceAlias.weekday:
+      return weekday();
+    case ChanceAlias.year:
+      return year(
+        max: max,
+        min: min,
+      );
   }
 }
