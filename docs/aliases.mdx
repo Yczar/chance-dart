@@ -1,0 +1,73 @@
+This is a table containing every alias on _chance_dart_:
+They can all be accessed via the ChaneAlias enum. For example:
+
+```
+ChanceAlias.boolean
+```
+
+The `args` are possible arguments that can be passed while generating in order to help streamline and customize results of the generator.
+
+| S/N  | Alias          | args                                                                                                                                                   | Return Type      |
+| ---- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| `1`  | `boolean`      |                                                                                                                                                        | `bool`           |
+| `2`  | `character`    | `bool alpha(optional)`, `String pool(optional)`, `bool numeric(optional)`, `Casing casing(optional)`, `bool symbols(optional)`,                        | `String`         |
+| `3`  | `falsy`        | `Set<dynamic> pool(optional)`                                                                                                                          | `dynamic`        |
+| `4`  | `floating`     | `int fixed(optional), num min(optional), num max(optional)`                                                                                            | `double`         |
+| `5`  | `integer`      | `num max(optional)`                                                                                                                                    | `int`            |
+| `6`  | `letter`       | `Casing casing(optional)`                                                                                                                              | `String`         |
+| `7`  | `natural`      | `num max(optional)`                                                                                                                                    | `int`            |
+| `8`  | `prime`        | `num max(optional)`                                                                                                                                    | `int`            |
+| `9`  | `string`       | `int length(optional)`, `bool alpha(optional)`, `String pool(optional)`, `bool numeric(optional)`, `Casing casing(optional)`, `bool symbols(optional)` | `String`         |
+| `10` | `template`     | `String temp(required)`                                                                                                                                | `String`         |
+| `11` | `ccType`       |                                                                                                                                                        | `CCType`         |
+| `12` | `cc`           | `CCType ccType(optional)`, `int visaLength(optional)`,                                                                                                 | `String`         |
+| `13` | `cedi`         | `int fixed(optional), num min(optional), num max(optional)`                                                                                            | `String`         |
+| `14` | `currencyPair` |                                                                                                                                                        | `List<Currency>` |
+| `15` | `currency`     | `String currencyKeyToRemove(optional)`                                                                                                                 | `Currency`       |
+| `16` | `dollar`       | `int fixed(optional), num min(optional), num max(optional)`                                                                                            | `String`         |
+| `17` | `euro`         | `int fixed(optional), num min(optional), num max(optional)`                                                                                            | `String`         |
+| `18` | `expMonth`     | `bool future(optional)`                                                                                                                                | `String`         |
+| `19` | `expYear`      |                                                                                                                                                        | `String`         |
+| `20` | `exp`          |                                                                                                                                                        | `String`         |
+| `21` | `naira`        | `int fixed(optional), num min(optional), num max(optional)`                                                                                            | `String`         |
+| `22` | `address`      |                                                                                                                                                        | `Address`        |
+| `23` | `altitude`     |                                                                                                                                                        | `String`         |
+| `24` | `areaCode`     |                                                                                                                                                        | `String`         |
+| `25` | `city`         |                                                                                                                                                        | `String`         |
+| `26` | `coordinates`  |                                                                                                                                                        | `Coordinate`     |
+| `27` | `country`      |                                                                                                                                                        | `Country`        |
+| `28` | `depth`        |                                                                                                                                                        | `String`         |
+| `29` | `geohash`      |                                                                                                                                                        | `String`         |
+| `30` | `latitude`     |                                                                                                                                                        | `double`         |
+| `31` | `locale`       |                                                                                                                                                        | `String`         |
+| `32` | `longitude`    |                                                                                                                                                        | `double`         |
+| `33` | `phone`        | `String temp(optional)`                                                                                                                                | `String`         |
+| `34` | `postal`       |                                                                                                                                                        | `String`         |
+| `35` | `postCode`     |                                                                                                                                                        | `String`         |
+| `36` | `province`     |                                                                                                                                                        | `String`         |
+| `37` | `state`        |                                                                                                                                                        | `String`         |
+| `38` | `street`       |                                                                                                                                                        | `String`         |
+| `39` | `zip`          |                                                                                                                                                        | `String`         |
+| `40` | `age`          | `int max(optional)`                                                                                                                                    | `int`            |
+| `41` | `birthday`     |                                                                                                                                                        | `String`         |
+| `42` | `firstName`    |                                                                                                                                                        | `String`         |
+| `43` | `gender`       |                                                                                                                                                        | `String`         |
+| `44` | `lastName`     |                                                                                                                                                        | `String`         |
+| `45` | `personTitle`  |                                                                                                                                                        | `String`         |
+| `46` | `ssn`          |                                                                                                                                                        | `String`         |
+| `47` | `fullName`     |                                                                                                                                                        | `String`         |
+| `48` | `paragraph`    | `int sentences(optional), bool lineBreak(optional)`                                                                                                    | `String`         |
+| `49` | `sentence`     |                                                                                                                                                        | `String`         |
+| `50` | `syllable`     |                                                                                                                                                        | `String`         |
+| `51` | `animal`       |                                                                                                                                                        | `String`         |
+| `52` | `amPm`         |                                                                                                                                                        | `String`         |
+| `53` | `date`         |                                                                                                                                                        | `String`         |
+| `54` | `hour`         |                                                                                                                                                        | `int`            |
+| `55` | `millisecond`  |                                                                                                                                                        | `int`            |
+| `56` | `minute`       |                                                                                                                                                        | `int`            |
+| `57` | `month`        |                                                                                                                                                        | `String`         |
+| `58` | `second`       |                                                                                                                                                        | `int`            |
+| `59` | `timestamp`    |                                                                                                                                                        | `String`         |
+| `60` | `timezone`     |                                                                                                                                                        | `String`         |
+| `61` | `weekday`      |                                                                                                                                                        | `String`         |
+| `62` | `year`         | `int max(optional)`, `int min(optional)`                                                                                                               | `String`         |

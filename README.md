@@ -1,7 +1,9 @@
 # Chance Dart - Beta
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <p align="center">
@@ -63,21 +65,21 @@ This project is licensed under the [MIT License](http://en.wikipedia.org/wiki/MI
 Proudly written in Nigeria.
 
 ## Code Style
-  **i. Naming Convention:**
 
-|Naming Convention|Effective Style|Example|   
-|-----------------|---------------|-------|
-|Classes, enum types,typedefs,and type parameters,etensions|PascalCase|An example is ChanceField|
-|Libraries, packages, directories, and source files, import prefixes|snake_case|An example is currency_list|
-|Class members, top-level definitions, variables, parameters, and named parameters, constants|camelCase|An example is currencyList|
+**i. Naming Convention:**
 
-   
-  **ii. Style Rule**
-   * Always declare return types in your methods.
-   * Put required named parameters first.
-   * Always require non-null named parameters (@required).
-   * Indent your code where appropriate `(e.g Use two-space indentation.)`
-      
+| Naming Convention                                                                            | Effective Style | Example                     |
+| -------------------------------------------------------------------------------------------- | --------------- | --------------------------- |
+| Classes, enum types,typedefs,and type parameters,etensions                                   | PascalCase      | An example is ChanceField   |
+| Libraries, packages, directories, and source files, import prefixes                          | snake_case      | An example is currency_list |
+| Class members, top-level definitions, variables, parameters, and named parameters, constants | camelCase       | An example is currencyList  |
+
+**ii. Style Rule**
+
+- Always declare return types in your methods.
+- Put required named parameters first.
+- Always require non-null named parameters (@required).
+- Indent your code where appropriate `(e.g Use two-space indentation.)`
 
 ## Contributors ✨
 
