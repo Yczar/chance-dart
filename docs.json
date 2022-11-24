@@ -5,6 +5,7 @@
     "sidebar": [
       ["Overview", "/"],
       ["Quick Start", "/quickstart"],
+      ["Aliases", "/aliases"],
       ["Categories", [
         ["Basics", "/basics"],
         ["Finance", "/finance"],
