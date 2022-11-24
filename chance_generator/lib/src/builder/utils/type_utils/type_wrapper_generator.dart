@@ -30,18 +30,16 @@ class TypeWrapperGenerator extends GeneratorForAnnotation<ChanceType> {
     final getters = gettersAndSetters[0];
 
     var setters = gettersAndSetters[1];
-    final wrapperName = getWrapperName(interface.name, annotation);
+    // final wrapperName = getWrapperName(interface.name, annotation);
     final builder = ClassBuilder(interface, getters, setters);
     return '''
-    class $wrapperName {
       ${interface.name} generatedModel() {
         ${builder.generateModel()}
       }
       List<${interface.name}> generatedModels() {
         ${builder.generateModels()}
       }
-    }
-
+    
   ''';
   }
 
