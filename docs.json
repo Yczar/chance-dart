@@ -1,6 +1,7 @@
 {
     "name": "Chance Dart",
     "theme": "#36B9B9",
+    "twitter": "chance_dart",
     "sidebar": [
       ["Overview", "/"],
       ["Quick Start", "/quickstart"],
@@ -17,17 +18,6 @@
         ["Time", "/time"]
         ]],
       ["Contributing", "/contributing"]
-    ],
-    "coming-soon": [
-      ["Helpers", "/helpers"],
-      ["Location", "/location"],
-      ["Miscellaneous", "/miscellaneous"],
-      ["Mobile", "/mobile"],
-      ["Music", "/music"],
-      ["Person", "/person"],
-      ["Text", "/text"],
-      ["Thing", "/thing"],
-      ["Time", "/time"]
     ]
   }
 
