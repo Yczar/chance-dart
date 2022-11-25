@@ -28,7 +28,7 @@ Data generation is an important part of many projects especially projects that r
 
 Chance Dart is developed to deliver instant values to ensure speediness in development process and also reduce monotony.
 
-Many more details on [https://github.com/Yczar/chance-dart](https://github.com/Yczar/chance-dart) but this single
+Many more details on [docs](https://github.com/Yczar/chance-dart) but this single
 library can generate random numbers, characters, strings, names, addresses,
 dice, and pretty much anything else.
 
