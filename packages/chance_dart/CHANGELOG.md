@@ -15,3 +15,8 @@
 
 - Added samples for testing generator usage.
 - Created an alias enum to help determine the data and data type to generate.
+
+## 0.0.1-pre-release
+
+- Added some bug fixes.
+- Updated documentation with more detailed explanations.
