@@ -1,7 +1,9 @@
 # Chance Dart - Beta
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <p align="center">
@@ -15,8 +17,18 @@
 Check back in in few days for a stable version
 
 [![awesomeness](https://img.shields.io/badge/awesomeness-maximum-red.svg)](https://github.com/yczar/chance-dart)
+[![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 <br><br>
-Many more details on [https://github.com/Yczar/chance-dart](https://github.com/Yczar/chance-dart) but this single
+
+## Overview
+
+Chance Dart is a free Open Source project that lets you create random strings, integers, and other things to help with tiresome tasks, especially when building automated tests or wherever else you require anything random.
+
+Data generation is an important part of many projects especially projects that requires code generation and mocking of data.
+
+Chance Dart is developed to deliver instant values to ensure speediness in development process and also reduce monotony.
+
+Many more details on [docs](https://github.com/Yczar/chance-dart) but this single
 library can generate random numbers, characters, strings, names, addresses,
 dice, and pretty much anything else.
 
@@ -36,11 +48,9 @@ _Know a library that uses Chance that isn't here? Update the README and submit a
 
 ## Author
 
-### Babalola Ayotomide(Czar)
+### [Babalola Ayotomide(Czar)](https://www.github.com/Yczar)
 
-[https://www.github.com/Yczar](https://www.github.com/Yczar)
-
-[@czarify](https://twitter.com/czarify)
+### [Follow on Twitter](https://twitter.com/czarify)
 
 Please feel free to reach out to me if you have any questions or suggestions.
 
@@ -51,6 +61,23 @@ To start making contributions please refer to [`Contribution Docs`](https://docs
 This project is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License) so feel free to hack away :)
 
 Proudly written in Nigeria.
+
+## Code Style
+
+**i. Naming Convention:**
+
+| Naming Convention                                                                            | Effective Style | Example                     |
+| -------------------------------------------------------------------------------------------- | --------------- | --------------------------- |
+| Classes, enum types,typedefs,and type parameters,etensions                                   | PascalCase      | An example is ChanceField   |
+| Libraries, packages, directories, and source files, import prefixes                          | snake_case      | An example is currency_list |
+| Class members, top-level definitions, variables, parameters, and named parameters, constants | camelCase       | An example is currencyList  |
+
+**ii. Style Rule**
+
+- Always declare return types in your methods.
+- Put required named parameters first.
+- Always require non-null named parameters (@required).
+- Indent your code where appropriate `(e.g Use two-space indentation.)`
 
 ## Contributors ✨
 
@@ -72,6 +99,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center"><a href="https://github.com/7H3-PR073C70R"><img src="https://avatars.githubusercontent.com/u/52224298?v=4?s=100" width="100px;" alt="Oluwatobi D Okanlawon"/><br /><sub><b>Oluwatobi D Okanlawon</b></sub></a><br /><a href="https://github.com/Yczar/chance-dart/commits?author=7H3-PR073C70R" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/mariamadebolahamzat"><img src="https://avatars.githubusercontent.com/u/40490934?v=4?s=100" width="100px;" alt="Mariam Hamzat"/><br /><sub><b>Mariam Hamzat</b></sub></a><br /><a href="https://github.com/Yczar/chance-dart/commits?author=mariamadebolahamzat" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
