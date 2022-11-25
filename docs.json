@@ -9,7 +9,6 @@
       ["Categories", [
         ["Basics", "/basics"],
         ["Finance", "/finance"],
-        ["Helpers", "/helpers"],
         ["Miscellaneous", "/miscellaneous"],
         ["Mobile", "/mobile"],
         ["Music", "/music"],

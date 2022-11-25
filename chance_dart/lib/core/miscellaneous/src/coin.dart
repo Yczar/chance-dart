@@ -4,7 +4,7 @@ import 'dart:math';
 /// the head and tail of a coin.
 ///
 /// Returns:
-///   A list of strings.
+///   A string of either head or tail.
 String coin() {
   Set<String> coinValues = {'Head', 'Tail'};
   return coinValues.toList()[Random().nextInt(coinValues.length)];
