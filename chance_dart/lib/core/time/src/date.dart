@@ -5,5 +5,5 @@
 ///   A string with the current date.
 String date() {
   final now = DateTime.now();
-  return '${now.day}-${now.month}-${now.year}';
+  return now.toIso8601String();
 }
