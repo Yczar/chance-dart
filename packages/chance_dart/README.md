@@ -1,4 +1,4 @@
-# Chance Dart - Beta
+# Chance Dart
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
@@ -14,7 +14,6 @@
 <p align="center">
   <a href="https://github.com/Yczar/chance-dart">Homepage</a> &bull; <a href="https://docs.page/Yczar/chance-dart">Documentation</a>
 </p>
-Check back in in few days for a stable version
 
 [![awesomeness](https://img.shields.io/badge/awesomeness-maximum-red.svg)](https://github.com/yczar/chance-dart)
 [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)

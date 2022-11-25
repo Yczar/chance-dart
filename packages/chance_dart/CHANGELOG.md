@@ -20,3 +20,8 @@
 
 - Added some bug fixes.
 - Updated documentation with more detailed explanations.
+
+## 0.0.1
+
+- Added some bug fixes.
+- Updated documentation with more detailed explanations.
