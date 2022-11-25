@@ -48,9 +48,9 @@ _Know a library that uses Chance that isn't here? Update the README and submit a
 
 ## Author
 
-### [Babalola Ayotomide(Czar)](https://www.github.com/Yczar) Babalola Ayotomide(Czar)
+### [Babalola Ayotomide(Czar)](https://www.github.com/Yczar)
 
-### [Twitter Handle](https://twitter.com/czarify)
+### [Follow on Twitter](https://twitter.com/czarify)
 
 Please feel free to reach out to me if you have any questions or suggestions.
 
