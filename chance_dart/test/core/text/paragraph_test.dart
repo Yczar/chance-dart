@@ -15,14 +15,14 @@ void main() {
         'verify only one paragraph is generated whenever the function is being '
         'called without the number of sentences', () {
       final generatedParagraph = paragraph();
-      print(generatedParagraph.split('.').length);
-      print(generatedParagraph);
+      // print(generatedParagraph.split('.').length);
+      // print(generatedParagraph);
       expect(generatedParagraph.split('.').length - 1, 1);
     });
     test('verify paragraph equals the amount of sentences passed in', () {
       final sentences = Random().nextInt(50);
       final generatedParagraph = paragraph(sentences: sentences - 1);
-      print(generatedParagraph);
+      // print(generatedParagraph);
       expect(
         generatedParagraph.split('.').length,
         sentences,
