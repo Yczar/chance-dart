@@ -13,6 +13,7 @@
         ["Mobile", "/mobile"],
         ["Person", "/person"],
         ["Text", "/text"],
+        ["Time", "/time"],
         ["Thing", "/thing"]
         ]],
       ["Contributing", "/contributing"]
