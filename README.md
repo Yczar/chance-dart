@@ -1,4 +1,4 @@
-# Chance Dart - Beta
+# Chance Dart
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
@@ -14,7 +14,6 @@
 <p align="center">
   <a href="https://github.com/Yczar/chance-dart">Homepage</a> &bull; <a href="https://docs.page/Yczar/chance-dart">Documentation</a>
 </p>
-Check back in in few days for a stable version
 
 [![awesomeness](https://img.shields.io/badge/awesomeness-maximum-red.svg)](https://github.com/yczar/chance-dart)
 [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
@@ -28,7 +27,7 @@ Data generation is an important part of many projects especially projects that r
 
 Chance Dart is developed to deliver instant values to ensure speediness in development process and also reduce monotony.
 
-Many more details on [https://github.com/Yczar/chance-dart](https://github.com/Yczar/chance-dart) but this single
+Many more details on [docs](https://github.com/Yczar/chance-dart) but this single
 library can generate random numbers, characters, strings, names, addresses,
 dice, and pretty much anything else.
 
@@ -48,11 +47,9 @@ _Know a library that uses Chance that isn't here? Update the README and submit a
 
 ## Author
 
-### Babalola Ayotomide(Czar)
+### [Babalola Ayotomide(Czar)](https://www.github.com/Yczar)
 
-[https://www.github.com/Yczar](https://www.github.com/Yczar)
-
-[@czarify](https://twitter.com/czarify)
+### [Follow on Twitter](https://twitter.com/czarify)
 
 Please feel free to reach out to me if you have any questions or suggestions.
 

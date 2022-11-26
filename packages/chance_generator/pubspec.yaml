@@ -1,0 +1,20 @@
+name: chance_generator
+description:  Chance Dart is a free Open Source project that lets you create random strings, integers, and other things to help with tiresome tasks, especially when building automated tests or wherever else you require anything random.
+version: 0.0.1
+homepage: https://github.com/Yczar/chance-dart
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  build: ^2.0.0
+  source_gen: ^1.0.0
+  chance_dart: ^0.0.1
+  analyzer: ">=4.6.0 <6.0.0"
+  source_helper: ^1.1.0
+
+dev_dependencies:
+  test: ^1.17.11
+  build_test: any
+  build_runner: any
+  pedantic: ^1.11.1

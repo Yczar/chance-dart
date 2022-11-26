@@ -1,11 +1,16 @@
-This is a table containing every alias on _chance_dart_:
-They can all be accessed via the ChaneAlias enum. For example:
+This is a table containing every aliases on _chance_dart_ :
+
+They can all be accessed via the ChaneAlias enum.
+
+This is an enum usage example:
 
 ```
-ChanceAlias.boolean
+@ChanceField(
+    alias: ChanceAlias.boolean
+);
 ```
 
-The `args` are possible arguments that can be passed while generating in order to help streamline and customize results of the generator.
+The `args` variable is a List of possible arguments that can be passed in while generating random in order to streamline and customize results of the generator.
 
 | S/N  | Alias          | args                                                                                                                                                   | Return Type      |
 | ---- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |

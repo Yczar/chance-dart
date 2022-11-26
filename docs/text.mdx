@@ -1,1 +1,52 @@
 # Text
+
+## Syllable
+
+Returns a random word based on the syllable `count` passed into it. The maximum supported `count` is 4 and the minimum supported syllable `count` is 1.
+
+```
+chance.syllable(2);
+=> edit
+
+```
+
+## Word
+
+Returns a random word.
+
+```
+chance.word();
+=> ambiguity
+
+```
+
+## Sentence
+
+Returns a random sentence.
+
+```
+chance.sentence();
+=> There were a lot of paintings of monkeys waving bamboo sticks in the gallery.
+
+```
+
+## Paragraph
+
+Returns a randomly generated paragraph. It takes in two optional parameters `lineBreak` and `sentences`.
+
+_lineBreak_ defines if there should be a break between each sentences. This is by default `true`, whilst _sentences_ is the number of sentences in the paragraph.
+
+```
+chance.paragraph(sentences: 10);
+=>  I made myself a peanut butter sandwich as I didn't want to subsist on veggie crackers.
+ I am counting my calories, yet I really want dessert.
+ There are over 500 starfish in the bathroom drawer.
+ After fighting off the alligator, Brian still had to face the anaconda.
+ I made myself a peanut butter sandwich as I didn't want to subsist on veggie crackers.
+ That is an appealing treasure map that I can't read.
+ Dan took the deep dive down the rabbit hole.
+ That is an appealing treasure map that I can't read.
+ The snow-covered path was no help in finding his way out of the back-country.
+ Abstraction is often one floor above you.
+
+```

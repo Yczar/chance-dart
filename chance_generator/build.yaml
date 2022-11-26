@@ -1,8 +1,0 @@
-builders:
-  chance_generator:
-    import: "package:chance_generator/chance_generator.dart"
-    builder_factories: ["getBuilder"]
-    build_extensions: {".dart": ["chance_generator.g.part"]}
-    auto_apply: dependents
-    build_to: cache
-    applies_builders: ["source_gen|combining_builder"]
