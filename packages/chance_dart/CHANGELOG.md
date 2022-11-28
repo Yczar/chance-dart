@@ -25,3 +25,9 @@
 
 - Added some bug fixes.
 - Updated documentation with more detailed explanations.
+
+## 0.0.1+1
+
+- Added bug fixes.
+- Added min argument to integer function.
+- Updated documentation.
